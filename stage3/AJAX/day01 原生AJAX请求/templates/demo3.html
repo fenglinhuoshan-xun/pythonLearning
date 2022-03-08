@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        if(window.XMLHttpRequest){
+            var xhr = new XMLHttpRequest()
+        }else{
+            var xhr = new ActiveXObject('Microsoft.XMLHTTP')
+        }
+    // console.log(xhr)
+    // 1. 创建请求
+    xhr.open('get','http://127.0.0.1:5000/demo');
+    // 2. 绑定事件
+    xhr.onreadystatechange = function(){
+        if (xhr.readyState == 4 && xhr.status == 200){
+            console.log(xhr.responseText)
+        }
+    }
+    // 3. 发送请求，等着接收服务器端的消息
+    xhr.send(); // get方式，如果想传数据，可以用查询字符串的方式，将内容写在地址上
+    </script>
+</body>
+</html>

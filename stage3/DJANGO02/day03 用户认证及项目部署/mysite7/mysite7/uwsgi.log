@@ -1,0 +1,759 @@
+*** Starting uWSGI 2.0.18 (64bit) on [Sat Mar  5 13:57:02 2022] ***
+compiled with version: 7.5.0 on 10 March 2020 05:06:23
+os: Linux-4.18.0-15-generic #16~18.04.1-Ubuntu SMP Thu Feb 7 14:06:04 UTC 2019
+nodename: tedu
+machine: x86_64
+clock source: unix
+detected number of CPU cores: 2
+current working directory: /home/xiaoshoubingliang/PycharmProjects/stage3/DJANGO02/day03 用户认证及项目部署/mysite7/mysite7
+writing pidfile to uwsgi.pid
+detected binary path: /usr/local/bin/uwsgi
+!!! no internal routing support, rebuild with pcre support !!!
+chdir() to /home/xiaoshoubingliang/PycharmProjects/stage3/DJANGO02/day03 用户认证及项目部署/mysite7
+your processes number limit is 15433
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uWSGI http bound on 127.0.0.1:8000 fd 4
+uwsgi socket 0 bound to TCP address 127.0.0.1:38147 (port auto-assigned) fd 3
+Python version: 3.6.9 (default, Nov  7 2019, 10:44:02)  [GCC 8.3.0]
+Python main interpreter initialized at 0x55eb9aaae600
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 166752 bytes (162 KB) for 2 cores
+*** Operational MODE: threaded ***
+WSGI app 0 (mountpoint='') ready in 7 seconds on interpreter 0x55eb9aaae600 pid: 4516 (default app)
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 4516)
+spawned uWSGI worker 1 (pid: 4518, cores: 2)
+spawned uWSGI http 1 (pid: 4519)
+MyMW process_request do ---
+MyMW2 process_request do ---
+MyMW process_view do ---
+MyMW2 process_view do ---
+name 'a' is not defined
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/dist-packages/django/core/handlers/base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "./mysite7/views.py", line 70, in test_upload
+    a
+NameError: name 'a' is not defined
+
+MyMW2 process_response do ---
+MyMW process_response do ---
+[pid: 4518|app: 0|req: 1/1] 127.0.0.1 () {38 vars in 717 bytes} [Sat Mar  5 06:06:41 2022] GET /test_upload => generated 39 bytes in 10560 msecs (HTTP/1.1 200) 3 headers in 108 bytes (1 switches on core 0)
+MyMW process_request do ---
+MyMW2 process_request do ---
+MyMW process_view do ---
+MyMW2 process_view do ---
+name 'a' is not defined
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/dist-packages/django/core/handlers/base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "./mysite7/views.py", line 70, in test_upload
+    a
+NameError: name 'a' is not defined
+
+MyMW2 process_response do ---
+MyMW process_response do ---
+[pid: 4518|app: 0|req: 2/2] 127.0.0.1 () {40 vars in 748 bytes} [Sat Mar  5 06:07:23 2022] GET /test_upload => generated 39 bytes in 1335 msecs (HTTP/1.1 200) 3 headers in 108 bytes (1 switches on core 1)
+MyMW process_request do ---
+MyMW2 process_request do ---
+MyMW process_view do ---
+MyMW2 process_view do ---
+MyMW2 process_response do ---
+MyMW process_response do ---
+[pid: 4518|app: 0|req: 3/3] 127.0.0.1 () {38 vars in 726 bytes} [Sat Mar  5 06:07:56 2022] GET /test_page?page=3 => generated 394 bytes in 282 msecs (HTTP/1.1 200) 3 headers in 109 bytes (1 switches on core 0)
+SIGINT/SIGQUIT received...killing workers...
+gateway "uWSGI http 1" has been buried (pid: 4519)
+worker 1 buried after 1 seconds
+goodbye to uWSGI.
+*** Starting uWSGI 2.0.18 (64bit) on [Sat Mar  5 14:10:46 2022] ***
+compiled with version: 7.5.0 on 10 March 2020 05:06:23
+os: Linux-4.18.0-15-generic #16~18.04.1-Ubuntu SMP Thu Feb 7 14:06:04 UTC 2019
+nodename: tedu
+machine: x86_64
+clock source: unix
+detected number of CPU cores: 2
+current working directory: /home/xiaoshoubingliang/PycharmProjects/stage3/DJANGO02/day03 用户认证及项目部署/mysite7/mysite7
+writing pidfile to uwsgi.pid
+detected binary path: /usr/local/bin/uwsgi
+!!! no internal routing support, rebuild with pcre support !!!
+chdir() to /home/xiaoshoubingliang/PycharmProjects/stage3/DJANGO02/day03 用户认证及项目部署/mysite7
+your processes number limit is 15433
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uWSGI http bound on 127.0.0.1:8000 fd 4
+uwsgi socket 0 bound to TCP address 127.0.0.1:34103 (port auto-assigned) fd 3
+Python version: 3.6.9 (default, Nov  7 2019, 10:44:02)  [GCC 8.3.0]
+Python main interpreter initialized at 0x563be207b600
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 166752 bytes (162 KB) for 2 cores
+*** Operational MODE: threaded ***
+WSGI app 0 (mountpoint='') ready in 0 seconds on interpreter 0x563be207b600 pid: 4676 (default app)
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 4676)
+spawned uWSGI worker 1 (pid: 4678, cores: 2)
+spawned uWSGI http 1 (pid: 4680)
+SIGINT/SIGQUIT received...killing workers...
+gateway "uWSGI http 1" has been buried (pid: 4680)
+worker 1 buried after 1 seconds
+goodbye to uWSGI.
+*** Starting uWSGI 2.0.18 (64bit) on [Sat Mar  5 15:58:34 2022] ***
+compiled with version: 7.5.0 on 10 March 2020 05:06:23
+os: Linux-4.18.0-15-generic #16~18.04.1-Ubuntu SMP Thu Feb 7 14:06:04 UTC 2019
+nodename: tedu
+machine: x86_64
+clock source: unix
+detected number of CPU cores: 2
+current working directory: /home/xiaoshoubingliang/PycharmProjects/stage3/DJANGO02/day03 用户认证及项目部署/mysite7/mysite7
+writing pidfile to uwsgi.pid
+detected binary path: /usr/local/bin/uwsgi
+!!! no internal routing support, rebuild with pcre support !!!
+chdir() to /home/xiaoshoubingliang/PycharmProjects/stage3/DJANGO02/day03 用户认证及项目部署/mysite7
+your processes number limit is 15433
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uWSGI http bound on 127.0.0.1:8000 fd 4
+uwsgi socket 0 bound to TCP address 127.0.0.1:34603 (port auto-assigned) fd 3
+Python version: 3.6.9 (default, Nov  7 2019, 10:44:02)  [GCC 8.3.0]
+Python main interpreter initialized at 0x5597b1314600
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 166752 bytes (162 KB) for 2 cores
+*** Operational MODE: threaded ***
+WSGI app 0 (mountpoint='') ready in 0 seconds on interpreter 0x5597b1314600 pid: 5354 (default app)
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 5354)
+spawned uWSGI worker 1 (pid: 5356, cores: 2)
+spawned uWSGI http 1 (pid: 5358)
+*** Starting uWSGI 2.0.18 (64bit) on [Sat Mar  5 16:02:59 2022] ***
+compiled with version: 7.5.0 on 10 March 2020 05:06:23
+os: Linux-4.18.0-15-generic #16~18.04.1-Ubuntu SMP Thu Feb 7 14:06:04 UTC 2019
+nodename: tedu
+machine: x86_64
+clock source: unix
+detected number of CPU cores: 2
+current working directory: /home/xiaoshoubingliang/PycharmProjects/stage3/DJANGO02/day03 用户认证及项目部署/mysite7/mysite7
+writing pidfile to uwsgi.pid
+detected binary path: /usr/local/bin/uwsgi
+!!! no internal routing support, rebuild with pcre support !!!
+chdir() to /home/xiaoshoubingliang/PycharmProjects/stage3/DJANGO02/day03 用户认证及项目部署/mysite7
+your processes number limit is 15433
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+probably another instance of uWSGI is running on the same address (127.0.0.1:8000).
+bind(): Address already in use [core/socket.c line 769]
+Sat Mar  5 08:22:21 2022 - uWSGI worker 1 screams: UAAAAAAH my master disconnected: i will kill myself !!!
+Sat Mar  5 08:22:21 2022 - uWSGI worker 1 screams: UAAAAAAH my master disconnected: i will kill myself !!!
+*** Starting uWSGI 2.0.18 (64bit) on [Sun Mar  6 14:12:52 2022] ***
+compiled with version: 7.5.0 on 10 March 2020 05:06:23
+os: Linux-4.18.0-15-generic #16~18.04.1-Ubuntu SMP Thu Feb 7 14:06:04 UTC 2019
+nodename: tedu
+machine: x86_64
+clock source: unix
+detected number of CPU cores: 2
+current working directory: /home/xiaoshoubingliang/PycharmProjects/stage3/DJANGO02/day03 用户认证及项目部署/mysite7/mysite7
+writing pidfile to uwsgi.pid
+detected binary path: /usr/local/bin/uwsgi
+!!! no internal routing support, rebuild with pcre support !!!
+chdir() to /home/xiaoshoubingliang/PycharmProjects/stage3/DJANGO02/day03 用户认证及项目部署/mysite7
+your processes number limit is 15433
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+probably another instance of uWSGI is running on the same address (127.0.0.1:8000).
+bind(): Address already in use [core/socket.c line 769]
+*** Starting uWSGI 2.0.18 (64bit) on [Sun Mar  6 14:15:06 2022] ***
+compiled with version: 7.5.0 on 10 March 2020 05:06:23
+os: Linux-4.18.0-15-generic #16~18.04.1-Ubuntu SMP Thu Feb 7 14:06:04 UTC 2019
+nodename: tedu
+machine: x86_64
+clock source: unix
+detected number of CPU cores: 2
+current working directory: /home/xiaoshoubingliang/PycharmProjects/stage3/DJANGO02/day03 用户认证及项目部署/mysite7/mysite7
+writing pidfile to uwsgi.pid
+detected binary path: /usr/local/bin/uwsgi
+!!! no internal routing support, rebuild with pcre support !!!
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+chdir() to /home/xiaoshoubingliang/PycharmProjects/stage3/DJANGO02/day03 用户认证及项目部署/mysite7
+your processes number limit is 15433
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+probably another instance of uWSGI is running on the same address (127.0.0.1:8000).
+bind(): Address already in use [core/socket.c line 769]
+*** Starting uWSGI 2.0.18 (64bit) on [Sun Mar  6 14:16:05 2022] ***
+compiled with version: 7.5.0 on 10 March 2020 05:06:23
+os: Linux-4.18.0-15-generic #16~18.04.1-Ubuntu SMP Thu Feb 7 14:06:04 UTC 2019
+nodename: tedu
+machine: x86_64
+clock source: unix
+detected number of CPU cores: 2
+current working directory: /home/xiaoshoubingliang/PycharmProjects/stage3/DJANGO02/day03 用户认证及项目部署/mysite7/mysite7
+writing pidfile to uwsgi.pid
+detected binary path: /usr/local/bin/uwsgi
+!!! no internal routing support, rebuild with pcre support !!!
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+chdir() to /home/xiaoshoubingliang/PycharmProjects/stage3/DJANGO02/day03 用户认证及项目部署/mysite7
+your processes number limit is 15433
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+probably another instance of uWSGI is running on the same address (127.0.0.1:8000).
+bind(): Address already in use [core/socket.c line 769]
+*** Starting uWSGI 2.0.18 (64bit) on [Sun Mar  6 14:17:07 2022] ***
+compiled with version: 7.5.0 on 10 March 2020 05:06:23
+os: Linux-4.18.0-15-generic #16~18.04.1-Ubuntu SMP Thu Feb 7 14:06:04 UTC 2019
+nodename: tedu
+machine: x86_64
+clock source: unix
+detected number of CPU cores: 2
+current working directory: /home/xiaoshoubingliang/PycharmProjects/stage3/DJANGO02/day03 用户认证及项目部署/mysite7/mysite7
+writing pidfile to uwsgi.pid
+detected binary path: /usr/local/bin/uwsgi
+!!! no internal routing support, rebuild with pcre support !!!
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+chdir() to /home/xiaoshoubingliang/PycharmProjects/stage3/DJANGO02/day03 用户认证及项目部署/mysite7
+your processes number limit is 15433
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to TCP address 127.0.0.1:8000 fd 3
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+Python version: 3.6.9 (default, Nov  7 2019, 10:44:02)  [GCC 8.3.0]
+Python main interpreter initialized at 0x55a9cb06fbe0
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 166752 bytes (162 KB) for 2 cores
+*** Operational MODE: threaded ***
+WSGI app 0 (mountpoint='') ready in 2 seconds on interpreter 0x55a9cb06fbe0 pid: 4226 (default app)
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 4226)
+spawned uWSGI worker 1 (pid: 4228, cores: 2)
+MyMW process_request do ---
+MyMW2 process_request do ---
+MyMW process_view do ---
+MyMW2 process_view do ---
+name 'a' is not defined
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/dist-packages/django/core/handlers/base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "./mysite7/views.py", line 70, in test_upload
+    a
+NameError: name 'a' is not defined
+
+Internal Server Error: /test_upload
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/dist-packages/django/core/handlers/base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "./mysite7/views.py", line 70, in test_upload
+    a
+NameError: name 'a' is not defined
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/dist-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.6/dist-packages/django/core/handlers/base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/usr/local/lib/python3.6/dist-packages/django/core/handlers/base.py", line 155, in process_exception_by_middleware
+    response = middleware_method(request, exception)
+  File "./middleware/mymiddleware.py", line 54, in process_exception
+    recipient_list=settings.EX_EMAIL)
+  File "/usr/local/lib/python3.6/dist-packages/django/core/mail/__init__.py", line 60, in send_mail
+    return mail.send()
+  File "/usr/local/lib/python3.6/dist-packages/django/core/mail/message.py", line 291, in send
+    return self.get_connection(fail_silently).send_messages([self])
+  File "/usr/local/lib/python3.6/dist-packages/django/core/mail/backends/smtp.py", line 103, in send_messages
+    new_conn_created = self.open()
+  File "/usr/local/lib/python3.6/dist-packages/django/core/mail/backends/smtp.py", line 70, in open
+    self.connection.login(self.username, self.password)
+  File "/usr/lib/python3.6/smtplib.py", line 730, in login
+    raise last_exception
+  File "/usr/lib/python3.6/smtplib.py", line 721, in login
+    initial_response_ok=initial_response_ok)
+  File "/usr/lib/python3.6/smtplib.py", line 642, in auth
+    raise SMTPAuthenticationError(code, resp)
+smtplib.SMTPAuthenticationError: (535, b'Login Fail. Please enter your authorization code to login. More information in http://service.mail.qq.com/cgi-bin/help?subtype=1&&id=28&&no=1001256')
+MyMW2 process_response do ---
+MyMW process_response do ---
+[pid: 4228|app: 0|req: 1/1] 127.0.0.1 () {42 vars in 758 bytes} [Sun Mar  6 06:22:29 2022] GET /test_upload => generated 101792 bytes in 3172 msecs (HTTP/1.1 500) 4 headers in 130 bytes (1 switches on core 1)
+MyMW process_request do ---
+MyMW2 process_request do ---
+MyMW process_view do ---
+MyMW2 process_view do ---
+name 'a' is not defined
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/dist-packages/django/core/handlers/base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "./mysite7/views.py", line 70, in test_upload
+    a
+NameError: name 'a' is not defined
+
+Internal Server Error: /test_upload
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/dist-packages/django/core/handlers/base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "./mysite7/views.py", line 70, in test_upload
+    a
+NameError: name 'a' is not defined
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/dist-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.6/dist-packages/django/core/handlers/base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/usr/local/lib/python3.6/dist-packages/django/core/handlers/base.py", line 155, in process_exception_by_middleware
+    response = middleware_method(request, exception)
+  File "./middleware/mymiddleware.py", line 54, in process_exception
+    recipient_list=settings.EX_EMAIL)
+  File "/usr/local/lib/python3.6/dist-packages/django/core/mail/__init__.py", line 60, in send_mail
+    return mail.send()
+  File "/usr/local/lib/python3.6/dist-packages/django/core/mail/message.py", line 291, in send
+    return self.get_connection(fail_silently).send_messages([self])
+  File "/usr/local/lib/python3.6/dist-packages/django/core/mail/backends/smtp.py", line 103, in send_messages
+    new_conn_created = self.open()
+  File "/usr/local/lib/python3.6/dist-packages/django/core/mail/backends/smtp.py", line 70, in open
+    self.connection.login(self.username, self.password)
+  File "/usr/lib/python3.6/smtplib.py", line 730, in login
+    raise last_exception
+  File "/usr/lib/python3.6/smtplib.py", line 721, in login
+    initial_response_ok=initial_response_ok)
+  File "/usr/lib/python3.6/smtplib.py", line 642, in auth
+    raise SMTPAuthenticationError(code, resp)
+smtplib.SMTPAuthenticationError: (535, b'Login Fail. Please enter your authorization code to login. More information in http://service.mail.qq.com/cgi-bin/help?subtype=1&&id=28&&no=1001256')
+MyMW2 process_response do ---
+MyMW process_response do ---
+[pid: 4228|app: 0|req: 2/2] 127.0.0.1 () {42 vars in 758 bytes} [Sun Mar  6 06:22:40 2022] GET /test_upload => generated 101792 bytes in 898 msecs (HTTP/1.1 500) 4 headers in 130 bytes (1 switches on core 0)
+MyMW process_request do ---
+MyMW2 process_request do ---
+MyMW process_view do ---
+MyMW2 process_view do ---
+name 'a' is not defined
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/dist-packages/django/core/handlers/base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "./mysite7/views.py", line 70, in test_upload
+    return render(request, 'test_upload.html')
+NameError: name 'a' is not defined
+
+Internal Server Error: /test_upload
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/dist-packages/django/core/handlers/base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "./mysite7/views.py", line 70, in test_upload
+    return render(request, 'test_upload.html')
+NameError: name 'a' is not defined
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/dist-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.6/dist-packages/django/core/handlers/base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/usr/local/lib/python3.6/dist-packages/django/core/handlers/base.py", line 155, in process_exception_by_middleware
+    response = middleware_method(request, exception)
+  File "./middleware/mymiddleware.py", line 54, in process_exception
+    recipient_list=settings.EX_EMAIL)
+  File "/usr/local/lib/python3.6/dist-packages/django/core/mail/__init__.py", line 60, in send_mail
+    return mail.send()
+  File "/usr/local/lib/python3.6/dist-packages/django/core/mail/message.py", line 291, in send
+    return self.get_connection(fail_silently).send_messages([self])
+  File "/usr/local/lib/python3.6/dist-packages/django/core/mail/backends/smtp.py", line 103, in send_messages
+    new_conn_created = self.open()
+  File "/usr/local/lib/python3.6/dist-packages/django/core/mail/backends/smtp.py", line 70, in open
+    self.connection.login(self.username, self.password)
+  File "/usr/lib/python3.6/smtplib.py", line 730, in login
+    raise last_exception
+  File "/usr/lib/python3.6/smtplib.py", line 721, in login
+    initial_response_ok=initial_response_ok)
+  File "/usr/lib/python3.6/smtplib.py", line 642, in auth
+    raise SMTPAuthenticationError(code, resp)
+smtplib.SMTPAuthenticationError: (535, b'Login Fail. Please enter your authorization code to login. More information in http://service.mail.qq.com/cgi-bin/help?subtype=1&&id=28&&no=1001256')
+MyMW2 process_response do ---
+MyMW process_response do ---
+[pid: 4228|app: 0|req: 3/3] 127.0.0.1 () {44 vars in 789 bytes} [Sun Mar  6 06:23:28 2022] GET /test_upload => generated 102018 bytes in 839 msecs (HTTP/1.1 500) 4 headers in 130 bytes (1 switches on core 1)
+MyMW process_request do ---
+MyMW2 process_request do ---
+MyMW process_view do ---
+MyMW2 process_view do ---
+name 'a' is not defined
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/dist-packages/django/core/handlers/base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "./mysite7/views.py", line 70, in test_upload
+    return render(request, 'test_upload.html')
+NameError: name 'a' is not defined
+
+Internal Server Error: /test_upload
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/dist-packages/django/core/handlers/base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "./mysite7/views.py", line 70, in test_upload
+    return render(request, 'test_upload.html')
+NameError: name 'a' is not defined
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/dist-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.6/dist-packages/django/core/handlers/base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/usr/local/lib/python3.6/dist-packages/django/core/handlers/base.py", line 155, in process_exception_by_middleware
+    response = middleware_method(request, exception)
+  File "./middleware/mymiddleware.py", line 54, in process_exception
+    recipient_list=settings.EX_EMAIL)
+  File "/usr/local/lib/python3.6/dist-packages/django/core/mail/__init__.py", line 60, in send_mail
+    return mail.send()
+  File "/usr/local/lib/python3.6/dist-packages/django/core/mail/message.py", line 291, in send
+    return self.get_connection(fail_silently).send_messages([self])
+  File "/usr/local/lib/python3.6/dist-packages/django/core/mail/backends/smtp.py", line 103, in send_messages
+    new_conn_created = self.open()
+  File "/usr/local/lib/python3.6/dist-packages/django/core/mail/backends/smtp.py", line 70, in open
+    self.connection.login(self.username, self.password)
+  File "/usr/lib/python3.6/smtplib.py", line 730, in login
+    raise last_exception
+  File "/usr/lib/python3.6/smtplib.py", line 721, in login
+    initial_response_ok=initial_response_ok)
+  File "/usr/lib/python3.6/smtplib.py", line 642, in auth
+    raise SMTPAuthenticationError(code, resp)
+smtplib.SMTPAuthenticationError: (535, b'Login Fail. Please enter your authorization code to login. More information in http://service.mail.qq.com/cgi-bin/help?subtype=1&&id=28&&no=1001256')
+MyMW2 process_response do ---
+MyMW process_response do ---
+[pid: 4228|app: 0|req: 4/4] 127.0.0.1 () {44 vars in 789 bytes} [Sun Mar  6 06:25:16 2022] GET /test_upload => generated 102018 bytes in 1118 msecs (HTTP/1.1 500) 4 headers in 130 bytes (1 switches on core 0)
+MyMW process_request do ---
+MyMW2 process_request do ---
+MyMW process_view do ---
+MyMW2 process_view do ---
+name 'a' is not defined
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/dist-packages/django/core/handlers/base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "./mysite7/views.py", line 70, in test_upload
+    return render(request, 'test_upload.html')
+NameError: name 'a' is not defined
+
+Internal Server Error: /test_upload
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/dist-packages/django/core/handlers/base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "./mysite7/views.py", line 70, in test_upload
+    return render(request, 'test_upload.html')
+NameError: name 'a' is not defined
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/dist-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.6/dist-packages/django/core/handlers/base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/usr/local/lib/python3.6/dist-packages/django/core/handlers/base.py", line 155, in process_exception_by_middleware
+    response = middleware_method(request, exception)
+  File "./middleware/mymiddleware.py", line 54, in process_exception
+    recipient_list=settings.EX_EMAIL)
+  File "/usr/local/lib/python3.6/dist-packages/django/core/mail/__init__.py", line 60, in send_mail
+    return mail.send()
+  File "/usr/local/lib/python3.6/dist-packages/django/core/mail/message.py", line 291, in send
+    return self.get_connection(fail_silently).send_messages([self])
+  File "/usr/local/lib/python3.6/dist-packages/django/core/mail/backends/smtp.py", line 103, in send_messages
+    new_conn_created = self.open()
+  File "/usr/local/lib/python3.6/dist-packages/django/core/mail/backends/smtp.py", line 70, in open
+    self.connection.login(self.username, self.password)
+  File "/usr/lib/python3.6/smtplib.py", line 730, in login
+    raise last_exception
+  File "/usr/lib/python3.6/smtplib.py", line 721, in login
+    initial_response_ok=initial_response_ok)
+  File "/usr/lib/python3.6/smtplib.py", line 642, in auth
+    raise SMTPAuthenticationError(code, resp)
+smtplib.SMTPAuthenticationError: (535, b'Login Fail. Please enter your authorization code to login. More information in http://service.mail.qq.com/cgi-bin/help?subtype=1&&id=28&&no=1001256')
+MyMW2 process_response do ---
+MyMW process_response do ---
+[pid: 4228|app: 0|req: 5/5] 127.0.0.1 () {44 vars in 789 bytes} [Sun Mar  6 06:25:23 2022] GET /test_upload => generated 102018 bytes in 985 msecs (HTTP/1.1 500) 4 headers in 130 bytes (1 switches on core 1)
+MyMW process_request do ---
+MyMW2 process_request do ---
+MyMW process_view do ---
+MyMW2 process_view do ---
+name 'a' is not defined
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/dist-packages/django/core/handlers/base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "./mysite7/views.py", line 70, in test_upload
+    return render(request, 'test_upload.html')
+NameError: name 'a' is not defined
+
+Internal Server Error: /test_upload
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/dist-packages/django/core/handlers/base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "./mysite7/views.py", line 70, in test_upload
+    return render(request, 'test_upload.html')
+NameError: name 'a' is not defined
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/dist-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.6/dist-packages/django/core/handlers/base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/usr/local/lib/python3.6/dist-packages/django/core/handlers/base.py", line 155, in process_exception_by_middleware
+    response = middleware_method(request, exception)
+  File "./middleware/mymiddleware.py", line 54, in process_exception
+    recipient_list=settings.EX_EMAIL)
+  File "/usr/local/lib/python3.6/dist-packages/django/core/mail/__init__.py", line 60, in send_mail
+    return mail.send()
+  File "/usr/local/lib/python3.6/dist-packages/django/core/mail/message.py", line 291, in send
+    return self.get_connection(fail_silently).send_messages([self])
+  File "/usr/local/lib/python3.6/dist-packages/django/core/mail/backends/smtp.py", line 103, in send_messages
+    new_conn_created = self.open()
+  File "/usr/local/lib/python3.6/dist-packages/django/core/mail/backends/smtp.py", line 70, in open
+    self.connection.login(self.username, self.password)
+  File "/usr/lib/python3.6/smtplib.py", line 730, in login
+    raise last_exception
+  File "/usr/lib/python3.6/smtplib.py", line 721, in login
+    initial_response_ok=initial_response_ok)
+  File "/usr/lib/python3.6/smtplib.py", line 642, in auth
+    raise SMTPAuthenticationError(code, resp)
+smtplib.SMTPAuthenticationError: (535, b'Login Fail. Please enter your authorization code to login. More information in http://service.mail.qq.com/cgi-bin/help?subtype=1&&id=28&&no=1001256')
+MyMW2 process_response do ---
+MyMW process_response do ---
+[pid: 4228|app: 0|req: 6/6] 127.0.0.1 () {42 vars in 758 bytes} [Sun Mar  6 06:25:35 2022] GET /test_upload => generated 101883 bytes in 817 msecs (HTTP/1.1 500) 4 headers in 130 bytes (1 switches on core 0)
+SIGINT/SIGQUIT received...killing workers...
+worker 1 buried after 1 seconds
+goodbye to uWSGI.
+*** Starting uWSGI 2.0.18 (64bit) on [Sun Mar  6 14:27:59 2022] ***
+compiled with version: 7.5.0 on 10 March 2020 05:06:23
+os: Linux-4.18.0-15-generic #16~18.04.1-Ubuntu SMP Thu Feb 7 14:06:04 UTC 2019
+nodename: tedu
+machine: x86_64
+clock source: unix
+detected number of CPU cores: 2
+current working directory: /home/xiaoshoubingliang/PycharmProjects/stage3/DJANGO02/day03 用户认证及项目部署/mysite7/mysite7
+writing pidfile to uwsgi.pid
+detected binary path: /usr/local/bin/uwsgi
+!!! no internal routing support, rebuild with pcre support !!!
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+chdir() to /home/xiaoshoubingliang/PycharmProjects/stage3/DJANGO02/day03 用户认证及项目部署/mysite7
+your processes number limit is 15433
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to TCP address 127.0.0.1:8000 fd 3
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+Python version: 3.6.9 (default, Nov  7 2019, 10:44:02)  [GCC 8.3.0]
+Python main interpreter initialized at 0x55adb4fc5be0
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 166752 bytes (162 KB) for 2 cores
+*** Operational MODE: threaded ***
+WSGI app 0 (mountpoint='') ready in 1 seconds on interpreter 0x55adb4fc5be0 pid: 4356 (default app)
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 4356)
+spawned uWSGI worker 1 (pid: 4358, cores: 2)
+MyMW process_request do ---
+MyMW2 process_request do ---
+MyMW process_view do ---
+MyMW2 process_view do ---
+MyMW2 process_response do ---
+MyMW process_response do ---
+[pid: 4358|app: 0|req: 1/1] 127.0.0.1 () {44 vars in 789 bytes} [Sun Mar  6 06:28:03 2022] GET /test_upload => generated 518 bytes in 159 msecs (HTTP/1.1 200) 5 headers in 291 bytes (1 switches on core 0)
+MyMW process_request do ---
+MyMW2 process_request do ---
+MyMW process_view do ---
+MyMW2 process_view do ---
+MyMW2 process_response do ---
+MyMW process_response do ---
+[pid: 4358|app: 0|req: 2/2] 127.0.0.1 () {44 vars in 789 bytes} [Sun Mar  6 06:29:30 2022] GET /test_upload => generated 518 bytes in 3 msecs (HTTP/1.1 200) 5 headers in 291 bytes (1 switches on core 1)
+MyMW process_request do ---
+MyMW2 process_request do ---
+MyMW process_view do ---
+MyMW2 process_view do ---
+MyMW2 process_response do ---
+MyMW process_response do ---
+[pid: 4358|app: 0|req: 3/3] 127.0.0.1 () {42 vars in 758 bytes} [Sun Mar  6 06:52:14 2022] GET /test_upload => generated 518 bytes in 29 msecs (HTTP/1.1 200) 5 headers in 291 bytes (1 switches on core 1)
+MyMW process_request do ---
+MyMW2 process_request do ---
+MyMW process_view do ---
+MyMW2 process_view do ---
+MyMW2 process_response do ---
+MyMW process_response do ---
+[pid: 4358|app: 0|req: 4/4] 127.0.0.1 () {44 vars in 789 bytes} [Sun Mar  6 06:52:36 2022] GET /test_upload => generated 518 bytes in 2 msecs (HTTP/1.1 200) 5 headers in 291 bytes (1 switches on core 0)
+MyMW process_request do ---
+MyMW2 process_request do ---
+MyMW process_view do ---
+MyMW2 process_view do ---
+MyMW2 process_response do ---
+MyMW process_response do ---
+[pid: 4358|app: 0|req: 5/5] 127.0.0.1 () {44 vars in 789 bytes} [Sun Mar  6 06:52:37 2022] GET /test_upload => generated 518 bytes in 1 msecs (HTTP/1.1 200) 5 headers in 291 bytes (1 switches on core 0)
+MyMW process_request do ---
+MyMW2 process_request do ---
+MyMW process_view do ---
+MyMW2 process_view do ---
+MyMW2 process_response do ---
+MyMW process_response do ---
+[pid: 4358|app: 0|req: 6/6] 127.0.0.1 () {44 vars in 789 bytes} [Sun Mar  6 06:52:38 2022] GET /test_upload => generated 518 bytes in 2 msecs (HTTP/1.1 200) 5 headers in 291 bytes (1 switches on core 1)
+MyMW process_request do ---
+MyMW2 process_request do ---
+MyMW process_view do ---
+MyMW2 process_view do ---
+MyMW2 process_response do ---
+MyMW process_response do ---
+[pid: 4358|app: 0|req: 7/7] 127.0.0.1 () {44 vars in 789 bytes} [Sun Mar  6 06:52:38 2022] GET /test_upload => generated 518 bytes in 1 msecs (HTTP/1.1 200) 5 headers in 291 bytes (1 switches on core 0)
+SIGINT/SIGQUIT received...killing workers...
+worker 1 buried after 1 seconds
+goodbye to uWSGI.
+*** Starting uWSGI 2.0.18 (64bit) on [Sun Mar  6 15:18:36 2022] ***
+compiled with version: 7.5.0 on 10 March 2020 05:06:23
+os: Linux-4.18.0-15-generic #16~18.04.1-Ubuntu SMP Thu Feb 7 14:06:04 UTC 2019
+nodename: tedu
+machine: x86_64
+clock source: unix
+detected number of CPU cores: 2
+current working directory: /home/xiaoshoubingliang/PycharmProjects/stage3/DJANGO02/day03 用户认证及项目部署/mysite7/mysite7
+writing pidfile to uwsgi.pid
+detected binary path: /usr/local/bin/uwsgi
+!!! no internal routing support, rebuild with pcre support !!!
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+chdir() to /home/xiaoshoubingliang/PycharmProjects/stage3/DJANGO02/day03 用户认证及项目部署/mysite7
+your processes number limit is 15433
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to TCP address 127.0.0.1:8000 fd 3
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+Python version: 3.6.9 (default, Nov  7 2019, 10:44:02)  [GCC 8.3.0]
+Python main interpreter initialized at 0x556dec2eabe0
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 166752 bytes (162 KB) for 2 cores
+*** Operational MODE: threaded ***
+WSGI app 0 (mountpoint='') ready in 1 seconds on interpreter 0x556dec2eabe0 pid: 4737 (default app)
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 4737)
+spawned uWSGI worker 1 (pid: 4739, cores: 2)
+MyMW process_request do ---
+MyMW2 process_request do ---
+MyMW process_view do ---
+MyMW2 process_view do ---
+MyMW2 process_response do ---
+MyMW process_response do ---
+[pid: 4739|app: 0|req: 1/1] 127.0.0.1 () {44 vars in 789 bytes} [Sun Mar  6 07:19:02 2022] GET /test_upload => generated 518 bytes in 51 msecs (HTTP/1.1 200) 5 headers in 291 bytes (1 switches on core 0)
+MyMW process_request do ---
+MyMW2 process_request do ---
+MyMW2 process_response do ---
+MyMW process_response do ---
+Not Found: /test_a
+[pid: 4739|app: 0|req: 2/2] 127.0.0.1 () {42 vars in 748 bytes} [Sun Mar  6 07:19:17 2022] GET /test_a => generated 2847 bytes in 8 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 1)
+MyMW process_request do ---
+MyMW2 process_request do ---
+MyMW2 process_response do ---
+MyMW process_response do ---
+Not Found: /admin'
+[pid: 4739|app: 0|req: 3/3] 127.0.0.1 () {42 vars in 748 bytes} [Sun Mar  6 07:22:38 2022] GET /admin' => generated 2859 bytes in 24 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 4739|app: 0|req: 4/4] 127.0.0.1 () {42 vars in 746 bytes} [Sun Mar  6 07:22:40 2022] GET /admin => generated 0 bytes in 19 msecs (HTTP/1.1 301) 3 headers in 112 bytes (1 switches on core 0)
+MyMW process_request do ---
+MyMW2 process_request do ---
+MyMW process_view do ---
+MyMW2 process_view do ---
+MyMW2 process_response do ---
+MyMW process_response do ---
+[pid: 4739|app: 0|req: 5/5] 127.0.0.1 () {42 vars in 748 bytes} [Sun Mar  6 07:22:40 2022] GET /admin/ => generated 0 bytes in 93 msecs (HTTP/1.1 302) 7 headers in 265 bytes (1 switches on core 1)
+MyMW process_request do ---
+MyMW2 process_request do ---
+MyMW process_view do ---
+MyMW2 process_view do ---
+MyMW2 process_response do ---
+MyMW process_response do ---
+[pid: 4739|app: 0|req: 6/6] 127.0.0.1 () {42 vars in 785 bytes} [Sun Mar  6 07:22:41 2022] GET /admin/login/?next=/admin/ => generated 1819 bytes in 425 msecs (HTTP/1.1 200) 7 headers in 395 bytes (1 switches on core 0)
+MyMW process_request do ---
+MyMW2 process_request do ---
+MyMW2 process_response do ---
+MyMW process_response do ---
+Not Found: /static/admin/css/base.css
+[pid: 4739|app: 0|req: 7/7] 127.0.0.1 () {42 vars in 753 bytes} [Sun Mar  6 07:22:41 2022] GET /static/admin/css/base.css => generated 2904 bytes in 14 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 1)
+MyMW process_request do ---
+MyMW2 process_request do ---
+MyMW2 process_response do ---
+MyMW process_response do ---
+Not Found: /static/admin/css/login.css
+[pid: 4739|app: 0|req: 8/8] 127.0.0.1 () {42 vars in 755 bytes} [Sun Mar  6 07:22:41 2022] GET /static/admin/css/login.css => generated 2907 bytes in 3 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+MyMW process_request do ---
+MyMW2 process_request do ---
+MyMW2 process_response do ---
+MyMW process_response do ---
+Not Found: /static/admin/css/responsive.css
+[pid: 4739|app: 0|req: 9/9] 127.0.0.1 () {42 vars in 765 bytes} [Sun Mar  6 07:22:41 2022] GET /static/admin/css/responsive.css => generated 2922 bytes in 3 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 1)
+MyMW process_request do ---
+MyMW2 process_request do ---
+MyMW process_view do ---
+MyMW2 process_view do ---
+MyMW2 process_response do ---
+MyMW process_response do ---
+[pid: 4739|app: 0|req: 10/10] 127.0.0.1 () {44 vars in 816 bytes} [Sun Mar  6 09:33:11 2022] GET /admin/login/?next=/admin/ => generated 1819 bytes in 8857 msecs (HTTP/1.1 200) 7 headers in 395 bytes (1 switches on core 0)
+MyMW process_request do ---
+MyMW2 process_request do ---
+MyMW process_view do ---
+MyMW2 process_view do ---
+MyMW2 process_response do ---
+MyMW process_response do ---
+[pid: 4739|app: 0|req: 11/11] 127.0.0.1 () {44 vars in 816 bytes} [Sun Mar  6 09:36:45 2022] GET /admin/login/?next=/admin/ => generated 1819 bytes in 629 msecs (HTTP/1.1 200) 7 headers in 395 bytes (1 switches on core 1)
+MyMW process_request do ---
+MyMW2 process_request do ---
+MyMW process_view do ---
+MyMW2 process_view do ---
+MyMW2 process_response do ---
+MyMW process_response do ---
+[pid: 4739|app: 0|req: 12/12] 127.0.0.1 () {44 vars in 816 bytes} [Sun Mar  6 09:37:17 2022] GET /admin/login/?next=/admin/ => generated 1819 bytes in 53 msecs (HTTP/1.1 200) 7 headers in 395 bytes (1 switches on core 0)
+MyMW process_request do ---
+MyMW2 process_request do ---
+MyMW2 process_response do ---
+MyMW process_response do ---
+Not Found: /1
+[pid: 4739|app: 0|req: 13/13] 127.0.0.1 () {42 vars in 738 bytes} [Sun Mar  6 09:41:34 2022] GET /1 => generated 2832 bytes in 191 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)

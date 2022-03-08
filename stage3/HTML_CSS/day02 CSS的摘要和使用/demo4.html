@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>权重(优先级)</title>
+    <style>
+        /* 权重 1 */
+        /* h1{    
+            color: red;
+        } */
+        /* 权重 100 */
+        /* #title{  
+            color: aqua;
+        } */
+        /* 权重 10 */
+        /* .text{
+           
+            color: greenyellow;
+        } */
+        /* 群组选择器的权重：作用于同一元素的选择器相加 */
+        /* 权重 1 */
+        /* #name,.c1,h1{
+            
+            color: yellow;
+        } */
+        /* 权重 100 + 10 */
+        /* #title:hover{   
+            color: hotpink;
+        } */
+
+        /* 权重 1+10 */
+        h1:hover{
+            background-color: hotpink;
+        }
+        /* 权重 1+10 */
+        /* 当选择器的权重一致时，后写的样式生效 */
+        /* h1.text{
+            color: red;
+        } */
+        body{
+            /* 大部分的文本属性都可以继承给子元素 */
+            /* 继承的属性优先级是最低的 */
+            font-size: 16px;
+            color: red;
+            text-align: center;
+        }
+
+    </style>
+</head>
+<body>
+    <h1 id="title" class="text">测试用的文字</h1>
+</body>
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // function creatRand(max,len){
+        //     // max  从0～max之间的随机数
+        //     // len  生成随机数的个数
+        //     var arr = [];
+        //     for(var i=0;i<len;i++){
+        //         var rand = Math.floor(Math.random()*(max+1));
+        //         arr.push(rand);
+        //     }
+        //     return arr;
+        // }
+        // var res = creatRand(5,5);
+        // console.log(res);
+
+        function creatRand(max,len){
+            var arr = [];
+            // 生成随机数
+            // 判断随机数是否在数组中
+            // 如果不在则添加
+            while(arr.length<len){
+                var rand = Math.floor(Math.random()*(max+1));
+                str = arr.toString();
+                if(str.indexOf(rand) == -1){
+                    arr.push(rand);
+                }
+            }
+            return arr;
+        }
+        var res = creatRand(5,5);
+        console.log(res);
+
+        // var arr = [1,2,3,4];
+        // var num  = 1;
+        // var str = arr.toString();
+        // console.log(str.indexOf(num));
+
+    </script>
+</body>
+</html>

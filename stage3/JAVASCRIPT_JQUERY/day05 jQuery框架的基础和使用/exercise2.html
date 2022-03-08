@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <select name="" id="city"></select>
+    <select name="" id="area"></select>
+
+    <script src="js/jquery.min.js"></script>
+    <script>
+        var arr = [
+            {
+                "name":"请选择",
+                "value":0,
+                "child":[
+                    {
+                        "cname":"请选择",
+                        "cvalue":0
+                    }
+                ]
+            },
+            {
+                "name":"北京",
+                "value":'beijing',
+                "child":[
+                    {
+                        "cname":"北京1",
+                        "cvalue":"b1"
+                    },
+                    {
+                        "cname":"北京2",
+                        "cvalue":"b2"
+                    }
+                ]
+            },
+            {
+                "name":"上海",
+                "value":'shanghai',
+                "child":[
+                    {
+                        "cname":"上海1",
+                        "cvalue":"s1"
+                    },
+                    {
+                        "cname":"上海2",
+                        "cvalue":"s2"
+                    }
+                ]
+            },
+        ]
+        // 遍历arr  创建一个对应的option
+        // 将创建的option添加到#city中
+        $.each(arr,function(i,o){
+            // option属性不仅可以接收一个页面对象，还可以接收一个创建页面元素的字符串
+            $('#city').append(`<option value="${o.value}">${o.name}</option>`);
+        })
+        // 值发生改变时，用change事件
+        $('#city').on('change',function(){
+            // 找到当前下拉菜单的值
+            $.each(arr,function(i,o){
+                if(o.value == $('#city').val()){
+                    $('#area').html('');//初始化页面元素
+                    $.each(o.child,function(i,o2){
+                        $('#area').append(`<option value="${o2.cvalue}">${o2.cname}</option>`);
+                    })
+                }
+            })
+        })
+    </script>
+</body>
+</html>

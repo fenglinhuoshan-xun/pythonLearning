@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>    
+    <style>
+        .focus{
+            /* 去除超链接的下划线 */
+            text-decoration: none;
+            color: red;
+        }
+        #p1{
+            width: 200px;
+        }
+    </style>
+</head>
+<body>
+    <!-- herf会发生页面跳转，设置为特殊值javascript:; 可以让其执行一段js代码，不发生页面跳转-->
+    <a href="javascript:;">大</a>
+    <a href="javascript:;">中</a>
+    <a href="javascript:;" class="focus">小</a>
+    <p id="p1">
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eaque vero vitae blanditiis cumque aliquam rerum minima, saepe nesciunt mollitia, expedita, libero excepturi. Est, tempora debitis repudiandae ipsam enim quo sapiente?
+    </p>
+    <script>
+        var anchors=document.getElementsByTagName('a');
+        for(var i=0;i<anchors.length;i++){
+            anchors[i].onclick=function(){
+                // console.log(anchors[i]);//undefined
+                // 在循环内部找到当前元素
+                // this指代当前调用函数的页面元素
+                console.log(this.innerText);
+                changeFontSize(this.innerText);
+                // 清除全部a的样式focus
+                for(i=0;i<anchors.length;i++){
+                    anchors[i].removeAttribute('class');
+                }
+                // 为当前a标签添加focus属性 
+                this.setAttribute('class','focus')
+            }
+        }
+        // console.log(i);//3
+        function changeFontSize(key){
+            var p=document.getElementById('p1');
+            switch (key){
+                case '大':p.setAttribute('style','font-size:32px');
+                break;
+                case '中':p.setAttribute('style','font-size:24px');
+                break;
+                case '小':p.setAttribute('style','font-size:16px');
+                break;
+            }
+        }
+    </script>
+</body>
+</html>

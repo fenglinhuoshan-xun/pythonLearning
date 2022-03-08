@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <input id="age" type="text" placeholder="请输入年龄">
+    <span id="show"></span>
+    <button id="btn" >提交</button>
+    <script src="../static//js/jquery.min.js"></script>
+    <script>
+        $('#btn').click(function(){
+            // post默认以表单形式的数据提交
+            $.post('/ajax_post_server',{"age":$('#age').val()},function(response){
+                if(response.code == 200){
+                    $('#show').html(response.msg).css('color','green')
+                }else{
+                    $('#show').html(response.code).css('color','red')
+                }
+            },'json')
+        })
+    </script>
+</body>
+</html>

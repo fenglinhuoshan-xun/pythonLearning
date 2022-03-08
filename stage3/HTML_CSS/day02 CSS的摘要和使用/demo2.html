@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>后代选择器</title>
+    <style>
+        /* 空格表示查找后代元素    找div的后代元素p(包含直接子元素)p */
+        div p{
+            color: red;
+        } */
+
+        div span{
+            color: red
+        } */
+        ul>li{
+            text-align: center;
+        }
+    </style>
+
+</head>
+
+<body>
+    <ul>
+        <li>item1</li>
+        <li>item2</li>
+        <li>item3</li>
+    </ul>
+    <!-- 一层以上的嵌套，分为祖先标签和后代标签 -->
+    <div>祖先标签
+        <p>父标签
+            <span>子标签</span>
+        </p>
+    </div>
+
+    <!-- 选择器在代码补全上的应用 -->
+    <!-- div#title + tab键-->
+    <div id="title"></div>
+    <!-- p.red + tab键-->
+    <p class="red"></p>
+    <!-- div#id.red + tab键 -->
+    <div id="d1" class="red"></div>
+
+</body>
+
+</html>

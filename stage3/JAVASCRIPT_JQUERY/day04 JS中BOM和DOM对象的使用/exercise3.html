@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>换一换，随机显示图片</title>
+    <style>
+        #books{
+            width: 480px;
+            /* border: 1px solid red; */
+        }
+        .title{
+            /* 清除子元素浮动后，父元素高度为0的问题 */
+            overflow: hidden;
+        }
+        .title h3{
+            /* 清除h3的默认边距 */
+            margin: 0;
+            float: left;
+        }
+        .title span{
+            float: right;
+        }
+        .book{
+            overflow: hidden;
+            margin-top: 5px;
+        }
+        .book img{
+            /* 行内块元素显示时，默认有1px的空格，空格是因为行内块元素换行导致的 */
+            width: 120px;
+            float: left;
+        }
+
+    </style>
+</head>
+<body>
+    <div id="books">
+        <div class="title">
+            <h3>相关书籍</h3>
+            <span id="change">换一换</span>
+        </div>
+        <div class="book">
+            <img src="img/bk0-8.jpg" alt="">
+            <img src="img/bk1-8.jpg" alt="">
+            <img src="img/bk2-8.jpg" alt="">
+            <img src="img/bk3-8.jpg" alt="">
+        </div>
+    </div>
+    <script>
+        var arr_img_url = [
+        "img/bk0-8.jpg","img/bk1-8.jpg",
+        "img/bk2-8.jpg","img/bk3-8.jpg",
+        "img/bk4-8.jpg","img/bk5-8.jpg",
+        "img/bk6-8.jpg","img/bk7-8.jpg",
+        "img/bk8-8.jpg","img/bk9-8.jpg",
+        ]
+        // 定义一个函数，从数组中获取4个随机不重复的路径
+        // 通过索引值找到对应的路径
+        // 点击换一换时，将路径替换为我们找到的随机路径
+        var change = document.getElementById('change');
+        
+        change.onclick = function (){ 
+            for(var i=0;i<4;i++){
+                var imgs = document.getElementsByTagName('img');
+                arr_img_url.sort(function(a,b){
+                    return 0.5 - Math.random();
+                })
+                imgs[i].src = arr_img_url[i];
+                }
+            }
+
+        setInterval(change.onclick,3000);
+        
+
+        // function createRdn(){
+        //     var arr = [];
+        //     while(arr.length<4){
+        //         var i = Math.floor(Math.random()*10);
+        //         var str_arr = arr.toString();
+        //         if(str_arr.indexOf(i) == -1){
+        //             arr.push(i)
+        //         }
+        //     }
+        //     return arr;
+        // }
+
+        // var change = document.getElementById('change');
+        // var imgs = document.getElementsByTagName('img');
+        // change.onclick = function(){
+        //     var arr = createRdn();
+        //     imgs[0].src = arr_img_url[arr[0]];
+        //     imgs[1].src = arr_img_url[arr[1]];
+        //     imgs[2].src = arr_img_url[arr[2]];
+        //     imgs[3].src = arr_img_url[arr[3]];
+        // }
+        // // 每三秒自动切换
+        // setInterval(change.onclick,3000);
+    </script>
+</body>
+</html>

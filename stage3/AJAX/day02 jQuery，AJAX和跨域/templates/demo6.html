@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" id="uname" placeholder="请输入用户名">
+    <button id="btn">click me</button>
+    <h1 id="show"></h1>
+    <script src="../static/js/jquery.min.js"></script>
+    <script>
+        // function fun(str){
+        //     $('#show').html(str)
+        // }
+
+        $('#btn').click(function(){
+            $.ajax({
+                // url:'http://127.0.0.1:5000/cors_js?callback=fun', // jsonp和jsonpcallback功能相当于这个
+                url:'http://127.0.0.1:5000/cors_js',
+                type:'get',
+                data:{'uname':$('#uname').val()},
+                dataType:'jsonp', // 一般来说，返回值通常是json格式的，这个内容通常会放到括号里的
+                success:function(response){
+                    $('#show').html(response)
+                }
+                // jsonp:'callback',
+                // jsonpCallback:'fun',
+            })
+        })
+    </script>
+</body>
+</html>

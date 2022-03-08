@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="fab06dd2-01f0-47ae-86b8-9fb153b7cab9" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectId" id="1oeZfs4qjENpBbOnRgt14zPoRLo" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../aidvn2011/day02/mysite1" />
+    <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/stage2/IO_NET/day02" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Python.demo2">
+    <configuration name="demo01" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="PycharmProjects" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/python数据结构/day01" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/python数据结构/day01/demo01.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="demo1" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="PycharmProjects" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/pycharm_exercise" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/pycharm_exercise/demo1.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="demo2" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="PycharmProjects" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/pycharm_exercise" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/pycharm_exercise/demo2.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="seek (1)" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="PycharmProjects" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/stage2/IO_NET/day01 文件读写,网络基础内容/03文件处理细节" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/stage2/IO_NET/day01 文件读写,网络基础内容/03文件处理细节/seek.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="tcp_server (1)" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="PycharmProjects" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/stage2/IO_NET/day01 文件读写,网络基础内容/06TCP套接字编程" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/stage2/IO_NET/day01 文件读写,网络基础内容/06TCP套接字编程/tcp_server.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Python.demo2" />
+        <item itemvalue="Python.demo1" />
+        <item itemvalue="Python.demo01" />
+        <item itemvalue="Python.tcp_server (1)" />
+        <item itemvalue="Python.seek (1)" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="ServiceViewManager">
+    <option name="viewStates">
+      <list>
+        <serviceView>
+          <treeState>
+            <expand />
+            <select />
+          </treeState>
+        </serviceView>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="fab06dd2-01f0-47ae-86b8-9fb153b7cab9" name="Default Changelist" comment="" />
+      <created>1613649126696</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1613649126696</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="320" y="119" width="780" height="402" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1613651619435">
+      <screen x="67" y="27" width="1297" height="587" />
+    </state>
+    <state x="320" y="119" width="780" height="402" key="#com.intellij.fileTypes.FileTypeChooser/67.27.1297.587@67.27.1297.587" timestamp="1613651619435" />
+    <state x="439" y="77" key="FileChooserDialogImpl" timestamp="1619271439293">
+      <screen x="67" y="27" width="1297" height="587" />
+    </state>
+    <state x="439" y="77" key="FileChooserDialogImpl/67.27.1297.587@67.27.1297.587" timestamp="1619271439293" />
+    <state width="1271" height="108" key="GridCell.Tab.0.bottom" timestamp="1617337613362">
+      <screen x="67" y="27" width="1297" height="587" />
+    </state>
+    <state width="1271" height="108" key="GridCell.Tab.0.bottom/67.27.1297.587@67.27.1297.587" timestamp="1617337613362" />
+    <state width="1271" height="108" key="GridCell.Tab.0.center" timestamp="1617337613360">
+      <screen x="67" y="27" width="1297" height="587" />
+    </state>
+    <state width="1271" height="108" key="GridCell.Tab.0.center/67.27.1297.587@67.27.1297.587" timestamp="1617337613360" />
+    <state width="1271" height="108" key="GridCell.Tab.0.left" timestamp="1617337613360">
+      <screen x="67" y="27" width="1297" height="587" />
+    </state>
+    <state width="1271" height="108" key="GridCell.Tab.0.left/67.27.1297.587@67.27.1297.587" timestamp="1617337613360" />
+    <state width="1271" height="108" key="GridCell.Tab.0.right" timestamp="1617337613361">
+      <screen x="67" y="27" width="1297" height="587" />
+    </state>
+    <state width="1271" height="108" key="GridCell.Tab.0.right/67.27.1297.587@67.27.1297.587" timestamp="1617337613361" />
+    <state x="234" y="27" width="952" height="587" key="SettingsEditor" timestamp="1613821345222">
+      <screen x="67" y="27" width="1297" height="587" />
+    </state>
+    <state x="234" y="27" width="952" height="587" key="SettingsEditor/67.27.1297.587@67.27.1297.587" timestamp="1613821345222" />
+    <state x="319" y="148" key="com.intellij.ide.util.TipDialog" timestamp="1619271402420">
+      <screen x="67" y="27" width="1297" height="587" />
+    </state>
+    <state x="318" y="147" key="com.intellij.ide.util.TipDialog/67.27.1293.583@67.27.1293.583" timestamp="1616579609138" />
+    <state x="319" y="148" key="com.intellij.ide.util.TipDialog/67.27.1297.587@67.27.1297.587" timestamp="1619271402420" />
+    <state x="355" y="26" width="719" height="678" key="search.everywhere.popup" timestamp="1616462186513">
+      <screen x="67" y="27" width="1297" height="587" />
+    </state>
+    <state x="355" y="26" width="719" height="678" key="search.everywhere.popup/67.27.1297.587@67.27.1297.587" timestamp="1616462186513" />
+  </component>
+</project>

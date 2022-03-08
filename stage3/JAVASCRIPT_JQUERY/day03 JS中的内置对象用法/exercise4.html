@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        p{
+            width: 300px;
+        }
+        span{
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <input type="text" id="key">
+    <button id="search">查找</button>
+    <p id="text">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio odit at eligendi. Nisi rerum quis impedit dignissimos expedita! Tempore assumenda consequuntur sequi cupiditate deserunt, explicabo qui odio sapiente expedita nihil.
+    </p>
+
+    <script>
+        // 查找页面元素
+        var key = document.getElementById('key');
+        var search = document.getElementById('search');
+        var text = document.getElementById('text');
+
+        // 当查找按钮被点击时  通过用户输入的内容在text中查核匹配的结果
+        search.onclick = function(){
+            var reg = new RegExp(key.value,'ig');
+            if (reg.test(text.innerText)){
+                text.innerHTML = text.innerText.replace(reg,`<span>${key.value}</span>`);
+                // alert('检测到匹配结果')
+            }else{
+                alert('未检测到匹配结果')
+            }
+
+        }
+        // sit --> <span>sit</span>
+        // 将查找的结果替换为带有span标签的元素
+        // 将替换好的字符串放入页面中显示
+    </script>
+
+</body>
+</html>

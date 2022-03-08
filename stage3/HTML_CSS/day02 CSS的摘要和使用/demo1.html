@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <!-- 内嵌样式 -->
+    <!-- <style>
+        h1{
+            background-color: red;
+            color: white;
+            font-size: 40px;
+            text-align: center;
+        }
+    </style> -->
+    <!-- 外链样式 -->
+    <!-- <link rel="stylesheet" href="demo1.css"> -->
+    <style>
+        /* 通过id查找元素 */
+        #lastTitle{
+            font-size: 40px;
+            color: aqua;
+        }
+        /* 通过class查找元素 */
+        .red{
+            background-color: red;
+            color: white;
+        }
+        /* p标签中，class属性为red的标签 */
+        p.red{
+            font-size: 40px;
+        }
+        /* h1#lastTittle{}  */
+        .center{
+            text-align: center;
+        }
+
+        /* 群组选择器：下列选择器中的内容都进行样式修改 */
+        p.red,#lastTitle,.center{
+
+        }
+    </style>
+</head>
+<body>
+    <!-- 多个样式的写法 -->
+    <!-- 默认的浏览器的字体大小像素是16px -->
+    <!-- text-align：文本的水平对齐方式 -->
+    <h1 class="red">CSS基本概念</h1>
+    <!-- 多个类选择器的写法 -->
+    <h1 class="red center">俺也一样</h1>
+    <h1 id="lastTitle" class="center">我们不一样</h1>
+    <p class="red">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum in recusandae et, enim harum suscipit dolorem nam dolores ullam laboriosam laborum. Id, quia beatae! Voluptatem blanditiis dolore accusantium harum quisquam.
+    </p>
+</body>
+</html>

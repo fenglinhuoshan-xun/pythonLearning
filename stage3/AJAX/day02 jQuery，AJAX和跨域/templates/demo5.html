@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" id="uname" placeholder="请输入用户名">
+    <button id="btn">click me</button>
+    <h1 id="show"></h1>
+    <script src="../static/js/jquery.min.js"></script>
+    <script>
+        function fun(str){
+            $('#show').html(str)
+        }
+        $('#btn').click(function(){
+            var uname = $('#uname').val();
+            var str = `<script src="http://127.0.0.1:5000/cors_js?uname=${uname}&callback=fun"><\/script>` // /s在字符串中是一个转义字符，所以加一个\
+            $('body').append(str)
+        })
+    </script>
+    <!-- <script>
+        fun('欢迎qtx') // 不同的scripte标签中可以传值，可以调用
+    </script> -->
+    <!-- <script src="http://127.0.0.1:5000/cors_js?uname=Maria&callback=fun">
+        // "fun('欢迎qtx')"
+    </script> -->
+</body>
+</html>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>BOM</title>
+    <style>
+        div{
+            width:300px;
+            height: 400px;
+            background-color: red;
+            position: fixed;
+            right: 15px;
+            /* 在整个屏幕的下方 */
+            bottom: -400px;
+            transition: all 1s;
+        }
+        .show{
+            bottom: 0;
+        }
+    </style>
+</head>
+<body>
+    <button id="btn">stop</button>
+    <div id="el"></div>
+    <script>
+        // 延时执行
+        // 一次性定时器里面写了一个匿名函数
+        setTimeout(function(){
+            var el = document.getElementById('el');
+            el.setAttribute('class','show');       
+        },3000);
+
+        // 浏览器的窗口就是window对象  全局变量也是放在window中的  window不用写
+        // var res = window.confirm('确定要退出吗？');
+        // window.console.log(window.res);//根据用户选择返回一个boolean，即布尔值
+
+        function fun(){
+            console.log('hello world');
+        }
+
+        var timerID = setInterval(fun,1000);
+
+        // var btn = document.getElementById('btn');
+        // btn.onclick = function(){
+        //     clearInterval(timerID);
+        // }
+
+    </script>
+</body>
+</html>

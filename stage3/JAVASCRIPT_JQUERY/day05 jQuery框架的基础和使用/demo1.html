@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <div id="d1">
+        <span>上层的文本</span>
+        <div>33333</div>
+        <p>
+            下边的兄弟
+        </p>
+    </div>
+    <ul>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+    </ul>
+    <script>
+        // 如果查找元素的方式在某些浏览器中支持方式不太好，有些支持有些不支持
+        // 原生的js操作对元素的修改，删除，添加，对我们来说是十分重要的，我们一般对其进行一定的封装，然后再去使用
+        // 为了在其他文件中使用，不与其他方法重名，起一个不太常见的名字
+        // jQuery兼容性比较好，在一些低版本的IE浏览器中，自己写的一些代码可能不太好，用jQuery写的就好很多
+        // function $$(id){
+        //     return document.getElementById(id)
+        // }
+
+        // var d1 = document.getElementById('d1');
+        // d1.innerHTML = 'hello world';
+        // document.getElementById('d1').innerHTML = 'hello world';
+        // $$('d1').innerHTML = 'hello world';
+    </script>
+
+    <script src="js/jquery.min.js"></script>
+    <script>
+        console.log($('ul>li:odd'))
+        console.log($('ul>li:even'))
+        console.log($('ul>li:last'))
+        console.log($('ul>li:eq(1)'))
+        console.log($('ul>li:lt(3)'))
+        console.log($('ul>li:gt(3)'))
+        // console.log($('ul>li:first'))
+        // console.log($('ul>li:not(li:first)'))
+
+        // console.log($('span~p'))
+        // console.log($('span+p'))
+        // console.log($('#d1>span'))
+        // console.log($('#d1>p'))
+
+        // var d1 = document.getElementById('d1');
+        // console.log(d1);
+        // console.log($('#id'));
+    </script>
+</body>
+</html>

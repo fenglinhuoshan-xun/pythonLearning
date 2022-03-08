@@ -1,0 +1,10 @@
+1,select 0   keys*
+2,set trill:username user001
+3,strlen trill:username
+4,mset trill:password 123 trill:gender M trill:fansnumber 500
+5,exists trill:score
+6,incrby trill:fansnumber 10
+7,incr trill:fansnumber
+8,decrby trill:fansnumber 3
+10 flushdb
+11 flushall

@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="f6d5342d-48c2-44bb-94ca-7ea367073fdb" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectId" id="213BdZBfJfUhrgO6JTzI2xJoNg3" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../day04 Selenium + browser使用" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+  </component>
+  <component name="RunManager" selected="Python.09_doubanSpiderThread (1)">
+    <configuration name="02_proxyPool" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="day03 代理IP使用" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/02_proxyPool.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="07_ydSpider" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="day03 代理IP使用" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/07_ydSpider.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="08_douBan_movieSpider" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="day03 代理IP使用" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/08_douBan_movieSpider.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="09_doubanSpiderThread (1)" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="day03 代理IP使用" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/1" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/1/09_doubanSpiderThread.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="09_doubanSpiderThread" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="day03 代理IP使用" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/09_doubanSpiderThread.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Python.09_doubanSpiderThread (1)" />
+        <item itemvalue="Python.08_douBan_movieSpider" />
+        <item itemvalue="Python.09_doubanSpiderThread" />
+        <item itemvalue="Python.07_ydSpider" />
+        <item itemvalue="Python.02_proxyPool" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="ServiceViewManager">
+    <option name="viewStates">
+      <list>
+        <serviceView>
+          <treeState>
+            <expand />
+            <select />
+          </treeState>
+        </serviceView>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="f6d5342d-48c2-44bb-94ca-7ea367073fdb" name="Default Changelist" comment="" />
+      <created>1637159979106</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1637159979106</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="320" y="120" width="780" height="402" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1637744850614">
+      <screen x="67" y="27" width="1297" height="590" />
+    </state>
+    <state x="320" y="120" width="780" height="402" key="#com.intellij.fileTypes.FileTypeChooser/67.27.1297.590@67.27.1297.590" timestamp="1637744850614" />
+    <state x="167" y="125" width="1097" height="392" key="DiffContextDialog" timestamp="1637765218816">
+      <screen x="67" y="27" width="1297" height="590" />
+    </state>
+    <state x="167" y="125" width="1097" height="392" key="DiffContextDialog/67.27.1297.590@67.27.1297.590" timestamp="1637765218816" />
+    <state x="439" y="77" key="FileChooserDialogImpl" timestamp="1637820858332">
+      <screen x="67" y="27" width="1297" height="587" />
+    </state>
+    <state x="439" y="77" key="FileChooserDialogImpl/67.27.1297.587@67.27.1297.587" timestamp="1637820858332" />
+    <state width="1271" height="112" key="GridCell.Tab.0.bottom" timestamp="1637820861674">
+      <screen x="67" y="27" width="1297" height="587" />
+    </state>
+    <state width="1271" height="112" key="GridCell.Tab.0.bottom/67.27.1297.587@67.27.1297.587" timestamp="1637820861674" />
+    <state width="1271" height="113" key="GridCell.Tab.0.bottom/67.27.1297.590@67.27.1297.590" timestamp="1637770740808" />
+    <state width="1271" height="112" key="GridCell.Tab.0.center" timestamp="1637820861673">
+      <screen x="67" y="27" width="1297" height="587" />
+    </state>
+    <state width="1271" height="112" key="GridCell.Tab.0.center/67.27.1297.587@67.27.1297.587" timestamp="1637820861673" />
+    <state width="1271" height="113" key="GridCell.Tab.0.center/67.27.1297.590@67.27.1297.590" timestamp="1637770740804" />
+    <state width="1271" height="112" key="GridCell.Tab.0.left" timestamp="1637820861671">
+      <screen x="67" y="27" width="1297" height="587" />
+    </state>
+    <state width="1271" height="112" key="GridCell.Tab.0.left/67.27.1297.587@67.27.1297.587" timestamp="1637820861671" />
+    <state width="1271" height="113" key="GridCell.Tab.0.left/67.27.1297.590@67.27.1297.590" timestamp="1637770740804" />
+    <state width="1271" height="112" key="GridCell.Tab.0.right" timestamp="1637820861673">
+      <screen x="67" y="27" width="1297" height="587" />
+    </state>
+    <state width="1271" height="112" key="GridCell.Tab.0.right/67.27.1297.587@67.27.1297.587" timestamp="1637820861673" />
+    <state width="1271" height="113" key="GridCell.Tab.0.right/67.27.1297.590@67.27.1297.590" timestamp="1637770740806" />
+    <state x="234" y="27" width="952" height="587" key="SettingsEditor" timestamp="1637669728837">
+      <screen x="67" y="27" width="1297" height="587" />
+    </state>
+    <state x="234" y="27" width="952" height="587" key="SettingsEditor/67.27.1297.587@67.27.1297.587" timestamp="1637669728837" />
+    <state x="319" y="147" key="com.intellij.ide.util.TipDialog" timestamp="1637803542700">
+      <screen x="67" y="27" width="1297" height="587" />
+    </state>
+    <state x="319" y="147" key="com.intellij.ide.util.TipDialog/67.27.1297.587@67.27.1297.587" timestamp="1637803542700" />
+    <state x="319" y="148" key="com.intellij.ide.util.TipDialog/67.27.1297.590@67.27.1297.590" timestamp="1637724536084" />
+    <state x="355" y="27" width="719" height="585" key="search.everywhere.popup" timestamp="1637810740366">
+      <screen x="67" y="27" width="1297" height="587" />
+    </state>
+    <state x="355" y="27" width="719" height="585" key="search.everywhere.popup/67.27.1297.587@67.27.1297.587" timestamp="1637810740366" />
+  </component>
+</project>

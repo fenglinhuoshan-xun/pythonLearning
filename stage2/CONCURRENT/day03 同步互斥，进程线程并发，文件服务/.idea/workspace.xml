@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="c788b11d-6fa3-46a4-aeee-310542f0b831" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectId" id="204ZMimtoqWvnSONMQKGhz6aHTR" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../day04 IO模型，IO多路复用方法，HTTPServer" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/ftp文件服务器编码" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Python.ftp_server (1)">
+    <configuration name="dead_lock" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="day03 同步互斥，进程线程并发，文件服务" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/dead_lock.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="ftp_client" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="day03 同步互斥，进程线程并发，文件服务" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/ftp文件服务器编码" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/ftp文件服务器编码/ftp_client.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="ftp_server (1)" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="day03 同步互斥，进程线程并发，文件服务" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/ftp_server.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="ftp_server" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="day03 同步互斥，进程线程并发，文件服务" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/ftp文件服务器编码" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/ftp文件服务器编码/ftp_server.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="thread_server" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="day03 同步互斥，进程线程并发，文件服务" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/thread_server.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <list>
+      <item itemvalue="Python.ftp_client" />
+      <item itemvalue="Python.ftp_server" />
+      <item itemvalue="Python.thread_server" />
+      <item itemvalue="Python.dead_lock" />
+      <item itemvalue="Python.ftp_server (1)" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Python.ftp_server (1)" />
+        <item itemvalue="Python.ftp_server" />
+        <item itemvalue="Python.ftp_client" />
+        <item itemvalue="Python.dead_lock" />
+        <item itemvalue="Python.ftp_client" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="ServiceViewManager">
+    <option name="viewStates">
+      <list>
+        <serviceView>
+          <treeState>
+            <expand />
+            <select />
+          </treeState>
+        </serviceView>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="c788b11d-6fa3-46a4-aeee-310542f0b831" name="Default Changelist" comment="" />
+      <created>1635305773995</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1635305773995</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="173" y="27" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1635666312409">
+      <screen x="67" y="27" width="1297" height="587" />
+    </state>
+    <state x="173" y="27" key="#com.intellij.execution.impl.EditConfigurationsDialog/67.27.1297.587@67.27.1297.587" timestamp="1635666312409" />
+    <state x="293" y="118" width="834" height="402" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1635675143148">
+      <screen x="67" y="27" width="1297" height="587" />
+    </state>
+    <state x="293" y="118" width="834" height="402" key="#com.intellij.fileTypes.FileTypeChooser/67.27.1297.587@67.27.1297.587" timestamp="1635675143148" />
+    <state x="386" y="27" width="660" height="587" key="#ftp_client" timestamp="1635665838505">
+      <screen x="67" y="27" width="1297" height="587" />
+    </state>
+    <state x="386" y="27" width="660" height="587" key="#ftp_client/67.27.1297.587@67.27.1297.587" timestamp="1635665838505" />
+    <state x="439" y="77" key="FileChooserDialogImpl" timestamp="1635679755450">
+      <screen x="67" y="27" width="1297" height="587" />
+    </state>
+    <state x="439" y="77" key="FileChooserDialogImpl/67.27.1297.587@67.27.1297.587" timestamp="1635679755450" />
+    <state width="1271" height="113" key="GridCell.Tab.0.bottom" timestamp="1635679761480">
+      <screen x="67" y="27" width="1297" height="587" />
+    </state>
+    <state width="1271" height="113" key="GridCell.Tab.0.bottom/67.27.1297.587@67.27.1297.587" timestamp="1635679761480" />
+    <state width="1271" height="113" key="GridCell.Tab.0.center" timestamp="1635679761479">
+      <screen x="67" y="27" width="1297" height="587" />
+    </state>
+    <state width="1271" height="113" key="GridCell.Tab.0.center/67.27.1297.587@67.27.1297.587" timestamp="1635679761479" />
+    <state width="1271" height="113" key="GridCell.Tab.0.left" timestamp="1635679761478">
+      <screen x="67" y="27" width="1297" height="587" />
+    </state>
+    <state width="1271" height="113" key="GridCell.Tab.0.left/67.27.1297.587@67.27.1297.587" timestamp="1635679761478" />
+    <state width="1271" height="113" key="GridCell.Tab.0.right" timestamp="1635679761479">
+      <screen x="67" y="27" width="1297" height="587" />
+    </state>
+    <state width="1271" height="113" key="GridCell.Tab.0.right/67.27.1297.587@67.27.1297.587" timestamp="1635679761479" />
+    <state x="319" y="146" key="com.intellij.ide.util.TipDialog" timestamp="1635660719570">
+      <screen x="67" y="27" width="1297" height="587" />
+    </state>
+    <state x="319" y="146" key="com.intellij.ide.util.TipDialog/67.27.1297.587@67.27.1297.587" timestamp="1635660719570" />
+    <state x="355" y="26" width="719" height="678" key="search.everywhere.popup" timestamp="1635663055939">
+      <screen x="67" y="27" width="1297" height="587" />
+    </state>
+    <state x="355" y="26" width="719" height="678" key="search.everywhere.popup/67.27.1297.587@67.27.1297.587" timestamp="1635663055939" />
+  </component>
+</project>

@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="85c410e9-7ff2-4ac9-a2d5-480bc952196b" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectId" id="21UacObaJKYSmC0ZXSCVhBOCyOf" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../stage3/DJANGO01/day03 应用及ORM" />
+    <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/Bookfere/Bookfere/spiders" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Python.run">
+    <configuration name="run (2)" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="day05 Scrapy框架" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Bookfere" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Bookfere/run.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="run (3)" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="day05 Scrapy框架" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Maoyan" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Maoyan/run.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="run (4)" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="day05 Scrapy框架" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Tecent" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Tecent/run.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="run (5)" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="day05 Scrapy框架" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Baixiaodu/Baixiaodu" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Baixiaodu/Baixiaodu/run.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="run" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="day05 Scrapy框架" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Tencent" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Tencent/run.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Python.run" />
+        <item itemvalue="Python.run (5)" />
+        <item itemvalue="Python.run (4)" />
+        <item itemvalue="Python.run (3)" />
+        <item itemvalue="Python.run (2)" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="ServiceViewManager">
+    <option name="viewStates">
+      <list>
+        <serviceView>
+          <treeState>
+            <expand />
+            <select />
+          </treeState>
+        </serviceView>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="85c410e9-7ff2-4ac9-a2d5-480bc952196b" name="Default Changelist" comment="" />
+      <created>1637998198854</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1637998198854</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="167" y="125" width="1097" height="389" key="DiffContextDialog" timestamp="1638262394055">
+      <screen x="67" y="27" width="1297" height="587" />
+    </state>
+    <state x="167" y="125" width="1097" height="389" key="DiffContextDialog/67.27.1297.587@67.27.1297.587" timestamp="1638262394055" />
+    <state x="439" y="77" key="FileChooserDialogImpl" timestamp="1638415040188">
+      <screen x="67" y="27" width="1297" height="587" />
+    </state>
+    <state x="439" y="77" key="FileChooserDialogImpl/67.27.1297.587@67.27.1297.587" timestamp="1638415040188" />
+    <state width="1271" height="141" key="GridCell.Tab.0.bottom" timestamp="1638375463171">
+      <screen x="67" y="27" width="1297" height="587" />
+    </state>
+    <state width="1271" height="141" key="GridCell.Tab.0.bottom/67.27.1297.587@67.27.1297.587" timestamp="1638375463171" />
+    <state width="1271" height="141" key="GridCell.Tab.0.center" timestamp="1638375463171">
+      <screen x="67" y="27" width="1297" height="587" />
+    </state>
+    <state width="1271" height="141" key="GridCell.Tab.0.center/67.27.1297.587@67.27.1297.587" timestamp="1638375463171" />
+    <state width="1271" height="141" key="GridCell.Tab.0.left" timestamp="1638375463170">
+      <screen x="67" y="27" width="1297" height="587" />
+    </state>
+    <state width="1271" height="141" key="GridCell.Tab.0.left/67.27.1297.587@67.27.1297.587" timestamp="1638375463170" />
+    <state width="1271" height="141" key="GridCell.Tab.0.right" timestamp="1638375463171">
+      <screen x="67" y="27" width="1297" height="587" />
+    </state>
+    <state width="1271" height="141" key="GridCell.Tab.0.right/67.27.1297.587@67.27.1297.587" timestamp="1638375463171" />
+    <state x="234" y="27" width="952" height="587" key="SettingsEditor" timestamp="1638257965308">
+      <screen x="67" y="27" width="1297" height="587" />
+    </state>
+    <state x="234" y="27" width="952" height="587" key="SettingsEditor/67.27.1297.587@67.27.1297.587" timestamp="1638257965308" />
+    <state x="319" y="147" key="com.intellij.ide.util.TipDialog" timestamp="1638414986229">
+      <screen x="67" y="27" width="1297" height="587" />
+    </state>
+    <state x="319" y="147" key="com.intellij.ide.util.TipDialog/67.27.1297.587@67.27.1297.587" timestamp="1638414986229" />
+    <state x="355" y="26" width="719" height="678" key="search.everywhere.popup" timestamp="1638373173279">
+      <screen x="67" y="27" width="1297" height="587" />
+    </state>
+    <state x="355" y="26" width="719" height="678" key="search.everywhere.popup/67.27.1297.587@67.27.1297.587" timestamp="1638373173279" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/1/Tencent/Tencent/pipelines.py</url>
+          <line>7</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+</project>

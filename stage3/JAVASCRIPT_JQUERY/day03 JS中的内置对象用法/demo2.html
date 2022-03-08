@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>字符串</title>
+</head>
+
+<body>
+    <script>
+        // 字符串来说，尽量用第一种方式
+        // var str1='abcd';
+        // var str2= new String('abcd');
+
+        // console.log(str1);
+        // console.log(str2);
+
+        // var str = 'this is a test string';
+
+        // var res = str.indexOf('is');
+        // console.log(res);
+        // console.log(str.charAt(10));
+        // console.log(str.charCodeAt(10));aqQ2W3
+
+        // 索引取值
+        //  console.log(str[0]);
+
+        // 遍历
+        //  for(var i=0;i<str.length;i++){
+        //      console.log(str[i]);
+        //  }
+        // for(var i in str){
+        //     console.log(str[i]);
+        // }
+
+        // var up=str.toUpperCase();
+        // console.log(up);
+        // console.log(str);
+
+        var str = 'This is a test string';
+
+        // 起始位置索引 和 字符串长度
+        console.log(str.substr(10,4))
+        // 起始位置索引 和 结束位置索引（不包括结束位置）
+        console.log(str.substring(0,5));
+
+        // string --> array
+        console.log(str.split(' '));
+        console.log(str.split('/'));
+
+
+
+        // var res = str.substring(0, 4);
+        // console.log(res);
+        // var res=str.substr(0,4);
+        // console.log(res);
+        // var res=str.split('-');
+        // console.log(res);
+
+        var reg = /is/ig;
+        console.log(reg.test(str),reg.lastIndex);
+        console.log(reg.test(str),reg.lastIndex);
+        console.log(reg.test(str),reg.lastIndex);//false
+
+        var res = str.match(reg);
+        
+        // var newStr = str.replace(reg, 'at');
+        // console.log(newStr);
+        // var reg=/this/ig;
+        // var reg2=new RegExp('is','ig');
+        // console.log(reg.test(str));
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,9 @@
+1，keys *
+2，RPUSH spider:urls 01_baidu.com 
+3，LRANGE spider:urls 0 -1
+4，LLEN spider:urls
+5，LSET spider:urls 0 01_tmall.com
+6,   LINSERT spider:urls after 04_jd.com 02_taobao.com
+7，RPOP spider:urls
+8，LREM spider:urls 0 02_taobao.com
+9，LTRIM spider:urls 0 2

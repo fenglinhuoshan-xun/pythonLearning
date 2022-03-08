@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>函数</title>
+</head>
+
+<body>
+    <button id="btn">click</button>
+    <script>
+        var btn = document.getElementById('btn')
+        btn.onclick = function () {
+            alert('hello world')
+        }
+
+        var a = 10;
+        function fun() {
+            // var a=1;
+            // a = 1;//全局变量,会覆盖原来的a
+            console.log(a)//1,1,10  局部有值，就近原则，选局部
+        }
+        fun();
+        console.log(a)//10,1,10
+
+        // function fun(){
+        //     console.log('hello world')
+        // }
+
+        // fun()
+
+        // function fun(name){
+        //     console.log('欢迎'+name);
+        // }
+
+        // fun('qtx')
+        // fun()//undefined
+
+        // function fun(a,b){
+        //     console.log(a+b);
+        // }
+        // fun(10)//NaN
+        // fun(10,20)
+
+        // var a = prompt('请输入第一个数字')
+        // var b = prompt('请输入第二个数字')
+        // function myMax(a, b) {
+        // 得到a,b中较大的值
+        // var a = Number(a);
+        // var b = Number(b);
+        // if(a>b){
+        //     return a;
+        // }else{
+        //     return b;
+        // }
+        // return undefined
+        //     return Number(a) > Number(b) ? Number(a) : Number(b)
+        // }
+        // var res = myMax(a, b);
+        // console.log(res + 10)
+
+        // (function(){
+        //     console.log('hello world')
+        // })()
+
+        // !function(){
+        //     alert('hello world')
+        // }()
+            
+        // var fun = function(){
+        //     console.log('hello world')
+        // }
+        // fun()
+
+
+    </script>
+</body>
+
+</html>

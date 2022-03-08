@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <button id="btn">clike me</button>
+    
+    <script>
+        //1.通过id查找页面元素
+        // 将对象用变量保存
+        var btn = document.getElementById('btn');
+        console.log(btn.id)
+        // 使用对象.属性的方式添加事件
+        btn.onclick=function(){
+            // 按钮被点击后执行的功能
+            console.log('hello world');
+        }
+    </script>
+</body>
+
+</html>

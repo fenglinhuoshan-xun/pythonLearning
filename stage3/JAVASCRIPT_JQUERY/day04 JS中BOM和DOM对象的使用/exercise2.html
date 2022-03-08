@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>动态立体时钟</title>
+    <style>
+        /* div{
+            width: 200px;
+            height: 100px;
+            border: 5px solid black;
+            /* 阴影属性：box-shadow  此属性以元素的左上方为起点，建立x、y坐标轴
+            x向右为正，y向下为正。取值：第一个值为向x轴正方向阴影，第二个值向y正方向阴影，第三个值为
+            模糊程度，第四个值为阴影扩散程度（扩散指向四个方向同时扩散，如果扩散，可以省略），第五个值指阴影颜色 */
+            /* box-shadow: 0px 0px 2px 5px red;
+            border-radius: 10px;
+            text-align: center; */
+        /* } */ 
+        #clock{
+            width: 73px;
+            padding: 5px 2px;
+            border: 1px solid red;
+            background-color: bisque;
+            border-radius: 3px;
+            box-shadow: 3px 3px 3px #666;
+        }
+    </style>
+</head>
+<body>
+    <div id="clock">
+        <span id="hh">00</span>
+        <span id="tip">:</span>
+        <span id="mm">00</span>
+        <span id="tip">:</span>
+        <span id="ss">00</span>
+    </div>
+    <img src="name" alt="">
+    <script>
+        // 获取页面元素
+        // var hh = document.getElementById('hh');
+        // var mm = document.getElementById('mm');
+        // var ss = document.getElementById('ss');
+        // // 获取当前的时间对象
+        // var now = new Date();
+        // // 获取时分秒  分别放在页面元素上
+        // hh.innerText = now.getHours();
+        // mm.innerText = now.getMinutes();
+        // ss.innerText = now.getSeconds();
+
+        function showTime(){
+            // 获取当前的时间对象
+            var now = new Date();
+            // 获取时分秒  分别放在页面元素上
+            hh.innerText = addZero(now.getHours());
+            mm.innerText = addZero(now.getMinutes());
+            ss.innerText = addZero(now.getSeconds());
+        }
+
+        setInterval(showTime,1000);
+
+        // 定义一个方法  接收一个数字  如果是一位数字  将数字补零显示
+        // 1 --> '01'
+        function addZero(num){
+            return num >= 10? num:'0'+num
+        }
+    </script>
+</body>
+</html>

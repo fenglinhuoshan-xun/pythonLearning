@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>时间差</title>
+</head>
+<body>
+    <script>
+        // 求2020/1/1d  到现在所过的天 时 分 秒
+        var start = new Date('2020-01-01 0:0:0');
+        var end = new Date();
+
+        // 从计算机诞生之日1970年1月1日  到现在为止的毫秒数（时间戳）
+        console.log(start.getTime());
+        console.log(end.getTime());
+        // var leftTime = end.getTime()-start.getTime();
+        var leftTime = Math.floor((end - start)/1000);
+        var days = Math.floor(leftTime/3600/24);
+        console.log(days);
+        var hours = Math.floor(leftTime/3600%24);
+        console.log(hours);
+        var minutes = Math.floor(leftTime/60%60);
+        console.log(minutes);
+        var seconds = leftTime%60;
+        console.log(seconds);
+        console.log(`今年已经度过了${days}天${hours}时${minutes}分${seconds}秒`);
+    </script>
+</body>
+</html>

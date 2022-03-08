@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>案例1</title>
+</head>
+
+<body>
+    <button id="btn">开始检测</button>
+    <script>
+        // var target = prompt('请输入一个值');
+        // 检测输入的值是否为数字
+        // console.log(typeof target);
+        // isNaN(target):判断target转数字的结果，如果转换成功，返回false,转换失败,返回true
+        // var res = isNaN(target);//'10'
+        // console.log(res);
+        // isNaN(target) ? console.log('非数字') : console.log('数字');
+
+        // 点击按钮，接受用户输入，判断结果是否是数字
+        var btn=document.getElementById('btn');
+        btn.onclick=function(){
+            var target = prompt('请输入一个值');
+            isNaN(target) ? console.log('非数字') : console.log('数字');
+        }
+    </script>
+</body>
+
+</html>

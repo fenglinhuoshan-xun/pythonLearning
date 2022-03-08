@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="b0fa8eb7-7985-4c7c-8d73-cf357a031c56" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectId" id="20kug8lwMYIgEzdTTuX9ObwgBmd" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../2048项目" />
+  </component>
+  <component name="RunManager">
+    <configuration name="review_course01" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="day04 总复习" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/review_course01.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Python.review_course01" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="ServiceViewManager">
+    <option name="viewStates">
+      <list>
+        <serviceView>
+          <treeState>
+            <expand />
+            <select />
+          </treeState>
+        </serviceView>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="b0fa8eb7-7985-4c7c-8d73-cf357a031c56" name="Default Changelist" comment="" />
+      <created>1636601014210</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1636601014210</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="439" y="77" key="FileChooserDialogImpl" timestamp="1636611619486">
+      <screen x="67" y="27" width="1297" height="587" />
+    </state>
+    <state x="439" y="77" key="FileChooserDialogImpl/67.27.1297.587@67.27.1297.587" timestamp="1636611619486" />
+    <state width="1271" height="113" key="GridCell.Tab.0.bottom" timestamp="1636611620789">
+      <screen x="67" y="27" width="1297" height="587" />
+    </state>
+    <state width="1271" height="113" key="GridCell.Tab.0.bottom/67.27.1297.587@67.27.1297.587" timestamp="1636611620789" />
+    <state width="1271" height="113" key="GridCell.Tab.0.center" timestamp="1636611620788">
+      <screen x="67" y="27" width="1297" height="587" />
+    </state>
+    <state width="1271" height="113" key="GridCell.Tab.0.center/67.27.1297.587@67.27.1297.587" timestamp="1636611620788" />
+    <state width="1271" height="113" key="GridCell.Tab.0.left" timestamp="1636611620786">
+      <screen x="67" y="27" width="1297" height="587" />
+    </state>
+    <state width="1271" height="113" key="GridCell.Tab.0.left/67.27.1297.587@67.27.1297.587" timestamp="1636611620786" />
+    <state width="1271" height="113" key="GridCell.Tab.0.right" timestamp="1636611620789">
+      <screen x="67" y="27" width="1297" height="587" />
+    </state>
+    <state width="1271" height="113" key="GridCell.Tab.0.right/67.27.1297.587@67.27.1297.587" timestamp="1636611620789" />
+    <state x="355" y="26" width="717" height="58" key="search.everywhere.popup" timestamp="1636609305246">
+      <screen x="67" y="27" width="1297" height="587" />
+    </state>
+    <state x="355" y="26" width="717" height="58" key="search.everywhere.popup/67.27.1297.587@67.27.1297.587" timestamp="1636609305246" />
+  </component>
+</project>

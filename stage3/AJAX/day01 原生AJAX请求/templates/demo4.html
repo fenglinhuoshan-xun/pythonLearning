@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>ajax -- post提交数据</title>
+</head>
+
+<body>
+    <input id="key" type="text">
+    <button id="btn">提交</button>
+    <script>
+        // 当点击提交按钮时，将用户输入的内容发送给服务器
+        var btn = document.getElementById('btn');
+        var key = document.getElementById('key');
+        // http://127.0.0.1:5000/json 
+        btn.onclick = function () {
+            var xhr = new XMLHttpRequest();
+            xhr.open('post', 'http://127.0.0.1:5000/json ', true)
+            xhr.onreadystatechange = function () {
+                if (xhr.readyState == 4 && xhr.status == 200) {
+                    // str --> obj
+                    var data = JSON.parse(xhr.responseText) 
+                    console.log(data)
+                }
+            }
+            var data = JSON.stringify({ "key": key.value }); // 前后端数据传输的内容必须都是字符串类型，对象不能作为数据传输，所以要处理一下
+            // 表单post提交的格式
+            // xhr.setRequestHeader('Content-Type','application/x-www-form-urlencoded'); // 仿照form表单post方式提交时的请求头，变成form的形式没有用，必须变成json专用的形式
+            xhr.setRequestHeader('Content-Type','application/json'); //json专用格式
+            xhr.send(data)
+        }
+    </script>
+</body>
+
+</html>

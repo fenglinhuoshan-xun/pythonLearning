@@ -1,0 +1,57 @@
+思路分析
+
+1. 需求的确定
+
+    一级界面：注册，登录，退出
+    二级界面：查单词，历史记录，注销
+
+2. 技术分析
+
+    1. 数据库使用：mysql，user（存储用户）
+    2. 查单词：建立数据表，words（存储单词）
+    3. 网络并发方案：process多进程 tcp 并发
+
+3. 结构设计（如何的进行封装，客户端和服务端具体工作流程，划分模块）
+
+    如果不需要别人修改的软件代码，我们用函数封装就可以，如果提供给别人使用的话，用类封装
+    * 函数或者类封装
+    * 客户端：v （发起请求，得到展示结果）
+      服务端：m （数据处理） c（逻辑控制），即服务端写两个模块，互相配合
+    * 功能模块划分： 搭建结构（并发的网络模型，二级界面处理），登录，注册，查单词，历史记录
+
+4. 实践工作（优先级）
+
+    数据结构的整理（数据库的搭建，数据表的设计）
+        user
+            id name passwd
+            create table user (id int primary key auto_increment,name char(30) not null,passwd char(64) not null);
+
+        words
+            id word mean
+            create table words (id int primary key auto_increment,word varchar(30),mean varchar(256),index(word));
+
+        hist
+            id name word time
+            create table hist (id int primary key auto_increment,name varchar(32),word varchar(32),time datetime default now());
+
+            id user_id words_id time（关系表，user-words，多对多）
+
+            id words time user_id（user-hist，一对多）
+
+
+    架构模型的搭建
+
+        服务端：dict_server.py（主要做逻辑处理）
+              dict_db.py（主要做数据处理）
+
+        客户端：dict_client.py
+
+
+        确定协议：登录　L name passwd
+                注册 R name passwd
+                查单词 Q name word
+                历史记录　H name
+                退出 E
+
+    具体的功能实现
+

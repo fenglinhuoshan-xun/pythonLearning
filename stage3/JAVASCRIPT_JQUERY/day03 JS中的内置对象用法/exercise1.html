@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>字符串操作</title>
+</head>
+
+<body>
+    <input type="text" id="key">
+    <button id="btn1">解析邮箱地址</button>
+    <button id="btn2">获取身份证年月日</button>
+    <script>
+        // 获取页面元素
+        var key = document.getElementById('key');
+        var btn1 = document.getElementById('btn1');
+        // 当btn被点击时  获取输入框key的值
+        // 输入:shibw@tedu.cn
+        // 在控制台打印  用户名shibw  服务商tedu.cn
+        btn1.onclick = function (){
+            var str = key.value;
+            var a = str.indexOf('@');
+            console.log(a);
+            console.log('用户名'+str.substring(0,a));
+            console.log('服务商'+str.substring(a,str.length));
+            // var strArr=str.split('@');
+            // console.log(strArr);
+            // console.log('用户名'+strArr[0]);
+            // console.log('服务商'+strArr[1]);
+        }
+
+        // 100233190001011000
+        //       6   10
+        // 当btn2被点击时  获取key中的值  按照索引值解析年月日
+        var btn2 = document.getElementById('btn2');
+        btn2.onclick = function(){
+            var str = key.value;
+            var year = str.substr(6,4);
+            var month = str.substr(10,2);
+            var date = str.substr(12,2);
+            console.log(year,month,date);
+        }
+
+    </script>
+</body>
+
+</html>

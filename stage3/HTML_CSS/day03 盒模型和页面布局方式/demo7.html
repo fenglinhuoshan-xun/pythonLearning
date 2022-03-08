@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>绝对定位</title>
+    <style>
+        div{
+            width: 200px;
+            height: 200px;
+            background-color: red;
+            margin: 0 auto;
+            /* 为子元素的位置调整做参照物 */
+            position: relative;
+        }
+        span{
+            width: 100px;
+            height: 100px;
+            background-color: yellow;
+            /* 绝对定位  参照离他最近的 已定位的 祖先（父）元素 */
+            /* 脱离文档流 */
+            position: absolute;
+            /* left: 100px;
+            top: 100px; */
+            right: 0px;
+            bottom: 0px;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <span></span>
+    </div>
+</body>
+</html>

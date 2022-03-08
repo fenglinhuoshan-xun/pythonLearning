@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>元素隐藏和显示</title>
+    <style>
+        #red{
+            width: 200px;
+            height: 200px;
+            background-color: red;
+            display: block;
+        }
+        /* #img{
+            width: 122px;
+
+        } */
+        #img{
+            position: relative;
+            height: 272px;
+            width: 122px;
+            text-align: right;
+            position: fixed;
+            right: 0px;
+            top: 200px;
+        }
+        
+    </style>
+</head>
+<body>
+    <!-- <div id="red" style="display: block"></div> -->
+
+    <div id="img">
+        <img id="target" src="img02-5.png" alt="">
+        <img id="close" src="img01-5.png" alt="">
+    </div>
+
+    <script>
+        // 点击关闭按钮，关闭图片
+        // 找到页面元素，关闭的小图片和被关闭的大图片，保存到变量中
+        var target=document.getElementById('target')
+        var close=document.getElementById('close')
+        // 为小图片添加一个鼠标点击事件
+        // 当小图片被点击后，将两个图片全部隐藏
+        // close.onclick=function(){
+        //     target.style.display='none';
+        //     close.style.display='none';
+            // 点击隐藏div img
+            close.onclick=function(){
+                img.style.display='none';
+            }
+
+    </script>
+    <script>
+        var red=document.getElementById('red');
+        console.log(red.style); //对象.style：查看当前元素的css样式声明
+        // css的样式声明也是一个对象，可以再通过对象.属性的方式查看具体的样式
+        console.log(red.style.display);
+        red.style.display='none'; //隐藏元素
+        red.style.display='block';//显示元素
+    </script>
+</body>
+</html>

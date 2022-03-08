@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        div{
+            width: 200px;
+            height: 200px;
+            background-color: red;
+        }
+    </style>
+</head>
+<body>
+    <div></div>
+    <button id="btn1">隐藏</button>
+    <button id="btn2">上推</button>
+    <button id="btn3">淡隐</button>
+    <button id="btn4">自定义动画</button>
+    <script src="js/jquery.min.js"></script>
+    <script>
+        $('#btn1')[0].onclick = function(){
+            if($('#btn1').html() == '隐藏'){
+                $('div').hide(3000,function(){
+                    $('#btn1').html('显示');
+                });
+            }else{
+                $('div').show(3000,function(){
+                    $('#btn1').html('隐藏');
+                });
+            }
+        }
+
+        // 为btn2绑定鼠标单击效果
+        $('#btn2')[0].onclick = function(){
+            if($('#btn2').html() == "上推"){
+                $('div').slideUp(3000,function(){
+                    $('#btn2').html('下拉');
+                });
+            }else{
+                $('div').slideDown(3000,function(){
+                    $('#btn2').html('上推');
+                });
+            }
+        }
+    
+        // 为btn3添加鼠标单击事件  切换淡隐淡现的效果
+        $('#btn3')[0].onclick = function(){
+            if($('#btn3').html() == '淡隐'){
+                $('div').fadeOut(3000,function(){
+                    $('#btn3').html('淡现');
+                })
+            }else{
+                $('div').fadeIn(3000,function(){
+                    $('#btn3').html('淡隐');
+                })
+            }
+        }
+    
+        $('#btn4')[0].onclick = function(){
+            $('div').animate({
+                'margin-left':'200px',
+                'border-radius':'50%',
+            },3000,function(){
+                $('div').animate({
+                    'margin-left':'0',
+                    'border-radius':'0',
+                },3000,function(){
+                    $('div').fadeOut(1000);
+                });
+            });
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,30 @@
+HTTPServer
+
+1. 两端通信的问题
+
+    前端浏览器（客户端）：tcp
+
+    httpserver（服务端）（客户端）：创建两个套接字，一个作为服务端，一个作为客户端 tcp
+
+    webframe（服务端）
+
+2. 并发
+
+    httpserver：一般可以用多线程或者IO并发，但是用IO的前提条件，就是我们中间还有其他技术，解决一些收发消息不平衡，或者说收发消息速度不平衡的问题
+    如：缓冲，队列...
+    现在不用那么复杂，多进行多线程并发
+
+    webframe：多进程，多线程并发
+
+3. httpserver --> webframe
+
+    json --> "{'a':1,'b':'h1'}"
+
+    import json
+    json.dumps() python数据 --> json数据
+    json.loads() json数据 --> python数据
+
+    协议：
+    httpserver --> webframe {'methon':'GET','info':'/'}
+
+    webframe --> httpserver {'status':'200','data':'xxx'}

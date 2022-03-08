@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        ul,
+        li,
+        h2 {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+
+        div {
+            width: 200px;
+            height: 200px;
+            padding: 10px;
+            background-color: #eee;
+            border: 1px solid #666;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <h2>四大名著</h2>
+        <ul>
+            <li>
+                {{cid}}.
+                <a href="http://127.0.0.1:5000/list/{{cid}}">三国演义</a>
+            </li>
+            <li>
+                {{cid + 1}}.
+                <a href="http://127.0.0.1:5000/list/{{cid + 1}}">水浒传</a>
+            </li>
+            <li>
+                {{cid + 2}}.
+                <a href="http://127.0.0.1:5000/list/{{cid + 2}}">西游记</a>
+            </li>
+            <li>
+                {{cid + 3}}.
+                <a href="http://127.0.0.1:5000/list/{{cid + 3}}">红楼梦</a>
+            </li>
+        </ul>
+    </div>
+
+
+    </ul>
+</body>
+
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>固定定位</title>
+    <style>
+        p{
+            /* 高度大了，页面内容变多，有滚动条产生 */
+            height: 3000px;
+        }
+        div{
+            /* 1. 当元素设置绝对定位后，元素会脱离文档流，块元素没有了默认的特点，要自己设置宽高，以显示元素 */
+            width: 100%;
+            height: 100px;
+            background-color: pink;
+            position: fixed;
+            /* 2. 设置相对于浏览器页面的哪一个方向为参照物 */
+            bottom: 0;
+            left: 0
+        }
+
+    </style>
+</head>
+<body>
+    <p></p>
+    <div></div>
+</body>
+</html>

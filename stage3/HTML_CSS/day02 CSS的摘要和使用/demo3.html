@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>伪类选择器</title>
+    <style>
+        h1{
+            color: white;
+            background-color: red;
+            display: inline;
+            /* transition:过渡，让元素的样式的变化在规定时间内完成，可以取两个值，第一个表示改变的样式，第二个是过渡的时间 */
+            transition:all 0.5s;
+        }
+        h1:hover{
+            /* h1鼠标移入时显示的样式 */
+            color: green;
+            background-color: orange;
+            cursor: pointer;/* 鼠标指针变成小手 */
+        }
+    
+    </style>
+</head>
+<body>
+    <h1>看我看我</h1>
+</body>
+</html>

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>轮播图</title>
+    <style>
+        #parent{
+            width: 739px;
+            height: 419px;
+            position: relative;
+        }
+        #parent>img{
+            position: absolute; 
+            /* 元素的隐藏和显示，不仅可以通过display属性来实现，还能通过设置不透明度来实现 */
+            opacity: 0; /* 隐藏所有图片 */
+            transition: all 0.5s;
+        }
+        /* 不能直接写.show，因为上面的权重为101,如果写.show，则权重为10,覆盖不了上面的。所以全写 */
+        #parent>img.show{
+            opacity: 1;
+        }
+        #ll,#rr{
+            position: absolute;
+            top: 50%;
+            margin-top: -20px;
+        }
+        #rr{
+            right: 0;
+        }
+    </style>
+</head>
+<body>
+    <div id="parent">
+        <img class="show item" src="img/gm1-6.jpg" alt="">
+        <img class="item" src="img/gm2-6.jpg" alt="">
+        <img class="item" src="img/gm3-6.jpg" alt="">
+        <img class="item" src="img/gm4-6.jpg" alt="">
+        <!-- 普通元素和已定位元素发生重叠，已定位元素在上方，如果都是定位元素，后写的在上方 -->
+        <img class="item" src="img/gm5-6.jpg" alt="">
+        <div> 
+            <img id="ll" src="img/l1-6.png" alt="">
+            <img id="rr" src="img/r1-6.png" alt="">
+        </div>
+        <script>
+            var items = document.getElementsByClassName('item');
+            var ll = document.getElementById('ll');
+            var rr = document.getElementById('rr');
+            // 找到当前图片，移除show，找到下一个图片，添加class show
+            var i = 0;//当前图片的索引值
+            rr.onclick = function(){
+                items[i].className = 'item';
+                i++;
+                if(i>items.length-1
+                ){
+                    i = 0;//如果是最后一张图再点击右侧按钮时，显示第一张图片
+                }
+                items[i].className = 'item show';
+            }
+
+            // 1 --> 5 --> 4  3  2  1  5...
+            ll.onclick = function(){
+                items[i].className = 'item';
+                i--
+                if(i<0){
+                    i = 4;//如果是最后一张图片，再点击左侧按钮时，显示最后一张图片
+                }
+                items[i].className = 'show item';
+            }
+
+            // 使用周期性定时器  每隔1.5s向右切换图片
+            var timer = setInterval(rr.onclick,1500);
+            // 当用户把鼠标移入到页面元素上时，停止定时器
+            var parent = document.getElementById('parent');
+            parent.onmouseover = function(){
+                clearInterval(timer);
+            }
+            // 当用户把鼠标移出页面元素时，启动定时器
+            parent.onmouseout = function(){
+                // var timer = setInterval(rr.onclick,1500);//不能加var，因为是局部的，只在函数中起作用，用完销毁，id没有接收，上方的function找不到，无法停止
+                timer = setInterval(rr.onclick,1500);
+            }
+        </script>
+    </div>
+</body>
+</html>

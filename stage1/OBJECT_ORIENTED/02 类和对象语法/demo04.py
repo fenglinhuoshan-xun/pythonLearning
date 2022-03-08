@@ -1,0 +1,62 @@
+"""
+    静态方法
+"""
+
+
+class Vector2:
+    """
+        向量
+    """
+
+    def __init__(self, x=0, y=0):
+        self.x = x
+        self.y = y
+
+    @staticmethod
+    def get_right():
+        return Vector2(0, 1)
+
+    @staticmethod
+    def get_up():
+        return Vector2(-1, 0)
+
+    @staticmethod
+    def get_left():
+        return Vector2(0, -1)
+
+
+class DoubleListHelper:
+    """
+        二维列表助手类
+    """
+
+    @staticmethod
+    def get_elements(list_target, vect_pos, vect_dir, count):
+        list_result = []
+        for __ in range(count):
+            vect_pos.x += vect_dir.x
+            vect_pos.y += vect_dir.y
+            element = list_target[vect_pos.x][vect_pos.y]
+            list_result.append(element)
+        return list_result
+
+
+pos = Vector2(2, 1)
+right = Vector2.get_right()
+pos.x += right.x
+pos.y += right.y
+print(pos.x)
+print(pos.y)
+
+list01 = [
+    ["00", "01", "02", "03", "04"],
+    ["10", "11", "12", "13", "14"],
+    ["20", "21", "22", "23", "24"],
+    ["30", "31", "32", "33", "34"],
+]
+
+print(DoubleListHelper.get_elements(list01, Vector2(3, 0), Vector2.get_right(), 3))
+# 练习：32位置　向上　获取三个元素
+print(DoubleListHelper.get_elements(list01, Vector2(3, 2), Vector2.get_up(), 3))
+# 练习：34位置　向左　获取四个元素
+print(DoubleListHelper.get_elements(list01, Vector2(3, 4), Vector2.get_left(), 4))

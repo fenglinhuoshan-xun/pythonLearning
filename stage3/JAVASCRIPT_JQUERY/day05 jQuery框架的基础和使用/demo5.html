@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="js/jquery.min.js"></script>
+    <script>
+        /* 代码从上而下执行，写在元素前面的js代码，找不到元素，不能执行。所以要有一个方法
+        让js代码等一下，等页面元素加载完毕后，再执行 */
+        // window.onload默认只执行一次
+        // window.onload = function(){
+        //     $('div').css('color','red');
+        // }
+        // $('div').html('hello world');
+        // var div = document.getElementsByTagName('div')[0];
+        // div.innerHTML = 'hello world';
+        $(function(){
+            $('div').css('color','red');
+        })
+    </script>
+
+</head>
+<body>
+    <div></div>
+    <script>
+        // 原生onload事件不能重复书写,会产生覆盖问题
+        // window.onload = function(){
+        //     $('div').html('hello qtx');
+        // }
+        $(function(){
+            // 对于jquery中的事件，就是在js中的事件把on去掉就行
+            // jQuery推崇一种链式的方法
+            $('div').html('hello qtx').on('click',function(){
+                alert('hello world');
+            })
+        });
+
+            
+    </script>
+</body>
+</html>

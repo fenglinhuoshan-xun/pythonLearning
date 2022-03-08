@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <select name="" id="city">
+        <!-- <option value="0">请选择</option>
+        <option value="beijing">北京</option>
+        <option value="shanghai">上海</option> -->
+    </select>
+
+    <script src="js/jquery.min.js"></script>
+    <script>
+        var arr = [
+            {
+                "name":"请选择",
+                "value":0,
+            },
+            {
+                "name":"北京",
+                "value":'beijing',
+            },
+            {
+                "name":"上海",
+                "value":'shanghai',
+            },
+        ]
+        // 遍历arr  创建一个对应的option
+        // 将创建的option添加到#city中
+        $.each(arr,function(i,o){
+            // option属性不仅可以接收一个页面对象，还可以接收一个创建页面元素的字符串
+            $('#city').append(`<option value="${o.value}">${o.name}</option>`);
+        })
+    </script>
+</body>
+</html>

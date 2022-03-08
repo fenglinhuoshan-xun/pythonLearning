@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script src="http://127.0.0.1:5000/cors_js"> // src属性会去在对应的位置找代码，然后拿到当前页面中，当前标签内执行。即src属性会绕过同源策略
+        // https://baidu.com/
+        // http://127.0.0.1:5000/ajax
+        // 协议      域名    端口号   
+        // http://localhost:5000/ajax // 在我们当前的本地的主机中，localhost会有一个专门的文件来去做解析，默认会解析成127.0.0.1。在浏览器使用的时候，他们两个是一致的。但是在跨域问题上，是死板的，不会深层次的解析，所有127.0.0.1和loacalhost会出现跨域问题
+        // favicon.ico:1 指的是页面左上角的那个小图标没加载出来，异常
+
+        // http://127.0.0.1:5000/ajax_server
+        // file:///home/xiaoshoubingliang/PycharmProjects/stage3/AJAX/day02%20jQuery%EF%BC%8CAJAX%E5%92%8C%E8%B7%A8%E5%9F%9F/templates/demo3.html
+
+        // 跨域问题
+        // 当前的页面和提交数据的服务器并不在同一个源中，默认禁止请求和响应
+        // Access to XMLHttpRequest at 'file:///ajax_server' from origin 'null' 跨域异常
+
+    </script>
+</body>
+</html>

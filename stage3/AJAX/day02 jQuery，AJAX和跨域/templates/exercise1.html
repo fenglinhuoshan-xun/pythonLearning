@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <h3>今日新闻</h3>
+    <ul id="list"></ul>
+    <script src="../static/js/jquery.min.js"></script>
+    <script>
+        $.ajax({
+            url:'http://127.0.0.1:5000/exer',
+            type:'get',
+            dataType:'jsonp',
+            success:function(response){
+                // console.log(response) # 已经帮你变成json格式的对象了
+                $.each(response,function(i,o){
+                    $('#list').append(`<li><a href="${o.id}">${o.title}</a></li>`)
+                })
+            }
+        })
+    </script>
+</body>
+</html>

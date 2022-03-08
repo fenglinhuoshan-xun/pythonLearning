@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        .red{
+            width: 200px;
+            height: 200px;
+            background-color: red;  
+        }
+    </style>
+</head>
+<body>
+    <div></div>
+    <button>click me</button>
+    <script src="js/jquery.min.js"></script>
+    <script>
+        var h1 = $('<h1>JQ生成的元素</h1>').attr('id','title').css('color','red');
+        // $('body').append(h1);
+        // $('body').prepend(h1);
+
+        $('div').after(h1);
+        // $('div').before(h1);
+        $('div').remove();
+
+
+        $('div').html('hello world').css('color','red');
+        $('div').html('hello world').css({
+            "color":"red",
+            "font-size":"20px",
+        })
+
+        // jq --> js
+        // $('button')[0].onclick = function(){
+        //     $('div').toggleClass('red')
+        // }
+
+        // var div = document.getElementsByTagName('div');
+        // div[0].innerText = 'hello world';
+
+        // $('div').html('hello world');
+
+        // $('div').attr('id','div1');
+        // console.log($('div').attr('id'));
+
+        // $('div').removeAttr('id');
+    </script>
+</body>
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <h3>今日新闻</h3>
+    <ul id="list"></ul>
+    
+    <script>
+        // 使用ajax技术发送get请求，请求地址：http://127.0.0.1:5000/news/all
+        // 将获取到的数据解析 JSON.parse()
+        // 然后放在页面中的list中显示
+        if (window.XMLHttpRequest){
+            var xhr = new XMLHttpRequest();
+        }else{
+            var xhr = ActiveXObject('Microsoft.XMLHTTP');
+        }
+        xhr.open('get','http://127.0.0.1:5000/news/all',true)
+        xhr.onreadystatechange = function(){
+            if (xhr.readyState == 4 && xhr.status == 200){
+                var data = JSON.parse(xhr.responseText)
+                var html = "";
+                for(var i in data){
+                    html += `<li><a href="#">${data[i]}</a></li>`
+                }
+                var list = document.getElementById('list');
+                list.innerHTML = html;
+            }
+        }
+        xhr.send();
+    </script>
+</body>
+</html>

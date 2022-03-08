@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- 通过表格帮助我们对齐页面元素 -->
+    <table>
+        <tr>
+            <td>姓名:</td>
+            <td><input type="text" id="uname"></td>
+        </tr>
+        <tr>
+            <td>密码:</td>
+            <td><input type="password" id="upwd"></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td><input type="submit" value="登录" id="btn"></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td id="tip"></td>
+        </tr>
+    </table>
+    <script src="../static/js/jquery.min.js"></script>
+    <script>
+        // 当访问http://127.0.0.1:5000/login时，显示页面exercise2.html
+
+        // 当用户点击登录按钮时，向http://127.0.0.1:5000/login_server发送post请求
+        // 如果用户名为空，返回提示xxx
+        // 如果密码为空，返回提示xxx
+        // 如果用户名是qtx，同时密码是123456，返回提示登录成功
+        // 否则返回提示定了失败
+        $('#btn').click(function () {
+            if ($('#uname').val() && $('#upwd').val()) {
+                $.ajax({
+                    url: 'http://127.0.0.1:5000/login_server',
+                    type: 'post',
+                    dataType: 'json',
+                    data: { 'uname': $('#uname').val(), "upwd": $('#upwd').val() },
+                    success: function (response) {
+                        console.log(response)
+                        if (response.code == 200) {
+                            $('#tip').html(response.msg).css('color', 'green')
+                        } else {
+                            $('#tip').html(response.msg).css('color', 'red')
+                        }
+                    }
+                })
+            }else{
+                $('#tip').html('请输入全部内容').css('color', 'red')
+            }
+        })
+    </script>
+</body>
+
+</html>

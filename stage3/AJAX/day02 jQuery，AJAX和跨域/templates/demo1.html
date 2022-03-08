@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>ajax -- get</title>
+</head>
+<body>
+    <button id="btn">get方式获取数据</button>
+    <h1 id="show"></h1>
+    <script src="../static/js/jquery.min.js"></script>
+    <script>
+        $('#btn').click(function(){
+            $.get('ajax_get_server',function(response){
+                // var data = JSON.parse(response);
+                console.log(response)
+                $('#show').html(response.msg);
+            },'json')
+        })
+        // Uncaught SyntaxError: Unexpected token o in JSON at position 1
+        // 对一个对象使用了JSON.parse()
+    </script>
+</body>
+</html>

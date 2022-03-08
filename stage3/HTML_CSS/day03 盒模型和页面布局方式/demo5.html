@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        div{
+            width: 200px;
+            height: 200px;
+            /* 消除缝隙：1.先设置行内块，再删除换行 */
+            /* display: inline-block; */
+            float: left;
+
+        }
+        .d1{
+            background-color: red;
+        }
+        .d2{
+            background-color: green;
+        }
+        .d3{
+            background-color: blue;
+            float: right;
+        }
+        h1{
+            border: 5px solid black;
+            /* height: 200px */ 
+            overflow: hidden;   
+        }
+        .clear{
+            clear:both;
+        }
+        span{
+            width: 200px;
+            height: 200px;
+            background-color: orange;
+            float: left;
+        }
+    </style>
+</head>
+<body>
+    <h1>
+        <div class="d1"></div>
+        <div class="d2"></div>
+        <div class="d3"></div>
+        <!-- <p class="clear"></p> -->
+    </h1>
+    <!-- span:行分区标签，单独的对一些包裹的内容加样式，而不影响其他文字 -->
+    <!-- 版权所有&copy;<span>达内科技</span> -->
+    <span>达内科技</span>
+</body>
+</html>

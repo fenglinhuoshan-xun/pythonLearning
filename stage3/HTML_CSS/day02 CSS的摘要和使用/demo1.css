@@ -1,0 +1,7 @@
+/* 外部样式表文件 */
+h1{
+    background-color: red;
+    color: white;
+    font-size: 40px;
+    text-align: center;
+}

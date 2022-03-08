@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta htt外边距p-equiv="X-UA-Compatible" content="ie=edge">
+    <title></title>
+    <style>
+        p,h1,h2.h3,ul,ol,li,table{
+            margin: 0;
+            padding: 0;
+        }
+        .div1{
+            width: 200px;
+            height: 200px;
+            background-color: red;
+            /* margin: 0 0 10px 0; */
+            /* margin-bottom: 10px; */
+            /* margin: 0 auto; */
+            margin-bottom: 100px;
+            /* 解决父元素没有内容导致子元素的上外边距溢出的问题 */
+            /* border: 1px solid transparent; */
+            padding-top: 1px; 
+
+        }
+        .div2{
+            width: 300px;
+            height:200px;
+            background-color: blue;
+            /* margin-left: -150px; */
+            margin-top: 200px;
+        }
+        .child{
+            width: 100px;
+            height: 100px;
+            margin-top: 20px;
+            background-color: aqua;
+        }
+    </style>
+</head>
+<body>
+    <!-- <div class="div1"></div> -->
+    <!-- <p class="div2"></p> -->
+    <!-- <div class="div2"></div> -->
+
+    <div class="div1">
+        <p class="child"></p>
+    </div>
+</body>
+</html>

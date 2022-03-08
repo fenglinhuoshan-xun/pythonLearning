@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>jquery -- ajax</title>
+</head>
+
+
+
+<body>
+    <div>
+        <input type="text" id="key">
+    </div>
+    <button id="btn1">发送get请求</button>
+    <button id="btn2">发送post请求</button>
+
+    <script src="../static/js/jquery.min.js"></script>
+    <script>
+        $('#btn1').click(function(){
+            $.ajax({
+                url:'/ajax_server',
+                type:'get',
+                // data:{"key":$('#key').val()},
+                // dataType:'json',
+                success:function(response){
+                    console.log(response)
+                    $('#btn1').removeAttr('disabled','disabled') // 当数据回来之后，再让用户点
+                }, 
+                error:function(e){
+                    alert('网络繁忙，请稍后再试')
+                },
+                beforeSend:function(){
+                    $('#btn1').attr('disabled','disabled') // 当点击按钮一次之后，就变灰，不让用户点，不会影响数据的发送。当数据回来之后，再让用户点
+                },
+                async:true,
+            })
+        })
+
+        $('#btn2').click(function(){
+            $.ajax({
+                url:'/ajax_server',
+                type:'post',
+                data:JSON.stringify({"key":$('#key').val()}), // 要以字符串的方式发送
+                success:function(response){
+                    console.log(response)
+                },
+                // ajax中要指明发送的是json格式的数据，有两种方式
+                contentType:'application/json', // 发送的是json格式的数据   方式1
+                // beforeSend:function(xhr){
+                //     xhr.setRequestHeader('Content-Type','application/json') // 发送的是json格式的数据    方式2
+                // },
+            })
+        })
+    </script>
+</body>
+</html>
